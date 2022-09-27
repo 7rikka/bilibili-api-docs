@@ -167,3 +167,90 @@ curl -L -X GET 'https://api.bilibili.com/pgc/review/user?media_id=4340' \
 }
 ```
 </details>
+
+# 获取剧集分集信息
+
+> https://api.bilibili.com/pgc/web/season/section
+
+请求方式：`GET`
+
+是否需要登录：`否`
+
+## URL参数
+
+| 参数名       | 类型  | 必填  | 内容         | 备注  |
+|-----------|-----|-----|------------|-----|
+| season_id | str | √   | 剧集seasonId |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注                      |
+|---------|-----|------|-------------------------|
+| code    | num | 响应码  | 0：success<br/>-404：啥都木有 |
+| message | str |      |                         |
+| result  | obj | 信息本体 |                         |
+
+### `result`对象
+
+| 字段名          | 类型    | 内容     | 备注  |
+|--------------|-------|--------|-----|
+| main_section | obj   | 正片信息   |     |
+| section      | array | 花絮、PV等 |     |
+
+#### `result`对象 -> `main_section`对象
+
+| 字段       | 类型    | 内容                           | 备注  |
+|----------|-------|------------------------------|-----|
+| episodes | array | 分集信息                         |     |
+| id       | num   | 分组id                         |     |
+| type     | num   | 0：正片<br/>1：PV&其他<br/>2：OP&ED |     |
+| title    | str   |                              |     |
+
+#### `result`对象 -> `main_section`对象 -> `episodes`数组中的对象
+
+| 字段          | 类型  | 内容       | 备注  |
+|-------------|-----|----------|-----|
+| aid         | num | 视频av号    |     |
+| badge       | str |          |     |
+| badge_info  | obj |          |     |
+| badge_type  | num | `0`      |     |
+| cid         | num | 分集cid    |     |
+| cover       | str | 分集封面     |     |
+| from        | str | `bangumi`  |     |
+| id          | num | 分集epId   |     |
+| is_premiere | num | 0        |     |
+| long_title  | str | 长标题      |     |
+| share_url   | str | 分集播放页url |     |
+| status      | num | 2        |     |
+| title       | str | 短标题      |     |
+| vid         | str |          |     |
+
+##### `result`对象 -> `main_section`对象 -> `episodes`数组中的对象 -> `badge_info`对象
+
+| 字段             | 类型  | 内容        | 备注  |
+|----------------|-----|-----------|-----|
+| bg_color       | str | `#FB7299` |     |
+| bg_color_night | str | `#BB5B76` |     |
+| text           | str | `空串`      |     |
+
+`section`数组中的对象：
+
+**同`main_section`对象**
+
+## 请求示例
+
+```shell
+
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+
+```
+</details>
