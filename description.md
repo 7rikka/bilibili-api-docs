@@ -8,6 +8,8 @@
 
 ## season id
 
+## series id
+
 ## cid
 
 ## oid
