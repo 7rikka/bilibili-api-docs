@@ -265,7 +265,7 @@ curl -L -X GET 'https://api.bilibili.com/pgc/review/user?media_id=4340' \
 ## 请求示例
 
 ```shell
-
+curl -L -X GET 'https://api.bilibili.com/pgc/web/season/section?season_id=4340'
 ```
 
 ## 响应示例
@@ -274,6 +274,279 @@ curl -L -X GET 'https://api.bilibili.com/pgc/review/user?media_id=4340' \
 <summary>点击查看</summary>
 
 ```json
-
+{
+  "code": 0,
+  "message": "success",
+  "result": {
+    "main_section": {
+      "episodes": [
+        {
+          "aid": 968620643,
+          "badge": "",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": ""
+          },
+          "badge_type": 0,
+          "cid": 202261238,
+          "cover": "http://i0.hdslb.com/bfs/archive/8175958db30ee1758955ef2165119c225273c36c.jpg",
+          "from": "bangumi",
+          "id": 329002,
+          "is_premiere": 0,
+          "long_title": "邂逅的…邪王真眼",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329002",
+          "status": 2,
+          "title": "1",
+          "vid": ""
+        },
+        {
+          "aid": 286113704,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202261408,
+          "cover": "http://i0.hdslb.com/bfs/archive/1f1a3ee4b2a6a68412cbbbcf2e3c3b45467faad2.jpg",
+          "from": "bangumi",
+          "id": 329003,
+          "is_premiere": 0,
+          "long_title": "旋律的…圣调理人",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329003",
+          "status": 13,
+          "title": "2",
+          "vid": ""
+        },
+        {
+          "aid": 968611756,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202261668,
+          "cover": "http://i0.hdslb.com/bfs/archive/cb287c8f6d072e77cb9f211b4b444aa7bfeccd94.jpg",
+          "from": "bangumi",
+          "id": 329004,
+          "is_premiere": 0,
+          "long_title": "异端的…双马尾 ",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329004",
+          "status": 13,
+          "title": "3",
+          "vid": ""
+        },
+        {
+          "aid": 753505705,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202261811,
+          "cover": "http://i0.hdslb.com/bfs/archive/d96eceb234598902edddf9c6776b3a6d5ae8a0ca.jpg",
+          "from": "bangumi",
+          "id": 329005,
+          "is_premiere": 0,
+          "long_title": "可恨的…黑暗圣典",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329005",
+          "status": 13,
+          "title": "4",
+          "vid": ""
+        },
+        {
+          "aid": 838564013,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202261974,
+          "cover": "http://i0.hdslb.com/bfs/archive/1d58718ec2bf13ada507632cf47c1b0b88b13cd8.jpg",
+          "from": "bangumi",
+          "id": 329006,
+          "is_premiere": 0,
+          "long_title": "束缚的…十字架",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329006",
+          "status": 13,
+          "title": "5",
+          "vid": ""
+        },
+        {
+          "aid": 838540312,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202262199,
+          "cover": "http://i0.hdslb.com/bfs/archive/d9d6192d387572370f42703fddcde45cc3282203.jpg",
+          "from": "bangumi",
+          "id": 329007,
+          "is_premiere": 0,
+          "long_title": "赎罪的…救世主 ",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329007",
+          "status": 13,
+          "title": "6",
+          "vid": ""
+        },
+        {
+          "aid": 541111336,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202262504,
+          "cover": "http://i0.hdslb.com/bfs/archive/25855ee7c7b08afe24745af9f991b5311d6e3ce9.jpg",
+          "from": "bangumi",
+          "id": 329009,
+          "is_premiere": 0,
+          "long_title": "追忆的…失乐园",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329009",
+          "status": 13,
+          "title": "7",
+          "vid": ""
+        },
+        {
+          "aid": 201078068,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202262652,
+          "cover": "http://i0.hdslb.com/bfs/archive/283eb404287b9fa2dcc24822c0620a43a928ee96.jpg",
+          "from": "bangumi",
+          "id": 329010,
+          "is_premiere": 0,
+          "long_title": "仅属于两人的…逃避之旅",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329010",
+          "status": 13,
+          "title": "8",
+          "vid": ""
+        },
+        {
+          "aid": 498514272,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202262795,
+          "cover": "http://i0.hdslb.com/bfs/archive/fb12d0c47defca3774f8b2b26a8f5786aa4d818b.jpg",
+          "from": "bangumi",
+          "id": 329011,
+          "is_premiere": 0,
+          "long_title": "混沌的…初恋烦恼 ",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329011",
+          "status": 13,
+          "title": "9",
+          "vid": ""
+        },
+        {
+          "aid": 583547991,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202262932,
+          "cover": "http://i0.hdslb.com/bfs/archive/3bb68c63b74221e368b6d951aecfdd3034869f7d.jpg",
+          "from": "bangumi",
+          "id": 329012,
+          "is_premiere": 0,
+          "long_title": "圣母的…便当盒",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329012",
+          "status": 13,
+          "title": "10",
+          "vid": ""
+        },
+        {
+          "aid": 841108727,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202263084,
+          "cover": "http://i0.hdslb.com/bfs/archive/a0ab0d00f8c8000046b91c5b4ec6ca6bc2d35ff4.jpg",
+          "from": "bangumi",
+          "id": 329013,
+          "is_premiere": 0,
+          "long_title": "单翼的…堕天使",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329013",
+          "status": 13,
+          "title": "11",
+          "vid": ""
+        },
+        {
+          "aid": 371010992,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202263295,
+          "cover": "http://i0.hdslb.com/bfs/archive/080b90595d875bd15f2a619ea05178c666134507.jpg",
+          "from": "bangumi",
+          "id": 329014,
+          "is_premiere": 0,
+          "long_title": "终天之契约",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329014",
+          "status": 13,
+          "title": "12",
+          "vid": ""
+        },
+        {
+          "aid": 926068856,
+          "badge": "会员",
+          "badge_info": {
+            "bg_color": "#FB7299",
+            "bg_color_night": "#BB5B76",
+            "text": "会员"
+          },
+          "badge_type": 0,
+          "cid": 202263430,
+          "cover": "http://i0.hdslb.com/bfs/archive/c87f7a21b505b847c9feff96cb761e8701620cb7.jpg",
+          "from": "bangumi",
+          "id": 329015,
+          "is_premiere": 0,
+          "long_title": "闪光的…圣爆诞祭  ",
+          "share_url": "https://www.bilibili.com/bangumi/play/ep329015",
+          "status": 13,
+          "title": "13",
+          "vid": ""
+        }
+      ],
+      "id": 21274,
+      "title": "正片",
+      "type": 0
+    },
+    "section": []
+  }
+}
 ```
 </details>
