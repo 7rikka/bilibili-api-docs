@@ -21,4 +21,5 @@
     - [X] [获取剧集分集信息](bangumi/info.md#获取剧集分集信息)
 - [ ] APP端接口
   - [ ] 登录
-    - [X] [[APP][TV端]获取登录二维码](login/qr.md#APPTV端获取登录二维码)
+    - [X] [[APP][TV端]获取登录二维码](login/qr.md#apptv端获取登录二维码)
+    - [X] [[APP][TV端]获取二维码扫描状态](login/qr.md#apptv获取二维码扫描状态)
