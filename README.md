@@ -15,6 +15,10 @@
 
 **目录**
 
+- [ ] [名词解释](md/description.md)
+- [X] [App端sign签名生成方法](md/app_sign.md)
+- [ ] [App端参数列表](md/params.md)
+- [ ] [响应码收集](code.md)
 - [ ] Web端接口
   - [ ] 剧集
     - [X] [获取剧集基本信息](bangumi/info.md#获取剧集基本信息)
@@ -22,4 +26,4 @@
 - [ ] APP端接口
   - [ ] 登录
     - [X] [[APP][TV端]获取登录二维码](login/qr.md#apptv端获取登录二维码)
-    - [X] [[APP][TV端]获取二维码扫描状态](login/qr.md#apptv获取二维码扫描状态)
+    - [X] [[APP][TV端]获取二维码扫描状态](login/qr.md#apptv端获取二维码扫描状态)
