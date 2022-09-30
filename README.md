@@ -39,6 +39,7 @@
       - [X] [获取公钥和盐值](login/password_tv.md#获取公钥和盐值)
       - [X] [账号密码登录](login/password_tv.md#账号密码登录)
       - [X] [密码加密示例](login/password_tv.md#密码加密示例)
+    - [X] [查询token有效时间](login/info.md#查询token有效时间)
 - [ ] 车机端
   - [X] 登录
     - [X] 二维码登录
