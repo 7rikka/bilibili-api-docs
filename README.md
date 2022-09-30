@@ -32,6 +32,7 @@
     - [X] [获取登录二维码](login/qr_tv.md#apptv端获取登录二维码)
     - [X] [获取二维码扫描状态](login/qr_tv.md#apptv端获取二维码扫描状态)
 - [ ] 车机端
-  - [ ] 登录
+  - [X] 登录
     - [X] [获取登录二维码](login/qr_car.md#获取登录二维码)
-    - [ ] [获取二维码扫描状态]()
+    - [X] [获取二维码扫描状态](login/qr_car.md#获取二维码扫描状态)
+    - [X] [退出登录](login/logout_car.md#退出登录)
