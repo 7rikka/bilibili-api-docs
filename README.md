@@ -19,11 +19,19 @@
 - [X] [App端sign签名生成方法](md/app_sign.md)
 - [ ] [App端参数列表](md/params.md)
 - [ ] [响应码收集](code.md)
-- [ ] Web端接口
+- [ ] Web端
   - [ ] 剧集
     - [X] [获取剧集基本信息](bangumi/info.md#获取剧集基本信息)
     - [X] [获取剧集分集信息](bangumi/info.md#获取剧集分集信息)
-- [ ] APP端接口
+- [ ] APP端
   - [ ] 登录
-    - [X] [[APP][TV端]获取登录二维码](login/qr.md#apptv端获取登录二维码)
-    - [X] [[APP][TV端]获取二维码扫描状态](login/qr.md#apptv端获取二维码扫描状态)
+    - [ ] [获取登录二维码]()
+    - [ ] [获取二维码扫描状态]()
+- [ ] TV端
+  - [ ] 登录
+    - [X] [获取登录二维码](login/qr_tv.md#apptv端获取登录二维码)
+    - [X] [获取二维码扫描状态](login/qr_tv.md#apptv端获取二维码扫描状态)
+- [ ] 车机端
+  - [ ] 登录
+    - [X] [获取登录二维码](login/qr_car.md#获取登录二维码)
+    - [ ] [获取二维码扫描状态]()
