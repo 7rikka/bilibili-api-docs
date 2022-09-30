@@ -35,6 +35,10 @@
     - [X] 短信登录
       - [X] [申请发送短信](login/sms_tv.md#申请发送短信)
       - [X] [使用短信验证码登录](login/sms_tv.md#使用短信验证码登录)
+    - [X] 账号密码登录
+      - [X] [获取公钥和盐值](login/password_tv.md#获取公钥和盐值)
+      - [X] [账号密码登录](login/password_tv.md#账号密码登录)
+      - [X] [密码加密示例](login/password_tv.md#密码加密示例)
 - [ ] 车机端
   - [X] 登录
     - [X] 二维码登录
