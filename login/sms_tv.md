@@ -1,0 +1,99 @@
+# 申请发送短信
+
+> https://passport.snm0516.aisee.tv/x/passport-tv-login/sms/send
+
+请求方式：`POST`
+
+是否需要登录：`否`
+
+Content-Type：`application/x-www-form-urlencoded`
+
+## URL参数
+
+| 参数名               | 类型   | 必填  | 内容            | 备注  |
+|-------------------|------|-----|---------------|-----|
+| appkey            | str  | √   |               |     |
+| bili_local_id     | str  |     |               |     |
+| brand             | str  |     |               |     |
+| build             | num  |     |               |     |
+| buvid             | str  |     |               |     |
+| channel           | str  |     |               |     |
+| cid               | num  | √   | 中国大陆电话区号：`86` |     |
+| code              | str  |     |               |     |
+| cpu               | str  |     |               |     |
+| device            | str  |     |               |     |
+| device_id         | str  |     |               |     |
+| device_name       | str  |     |               |     |
+| device_platform   | str  |     |               |     |
+| device_tourist_id | num  |     |               |     |
+| explor_attr       | num  |     |               |     |
+| extend            | str  |     |               |     |
+| fingerprint       | str  |     |               |     |
+| fourk             | num  |     |               |     |
+| guest_access_key  | str  |     |               |     |
+| guest_id          | num  |     |               |     |
+| guid              | str  |     |               |     |
+| local_fingerprint | str  |     |               |     |
+| local_id          | str  | √   |               |     |
+| login_session_id  | str  |     |               |     |
+| memory            | num  |     |               |     |
+| mobi_app          | str  |     |               |     |
+| mode_switch       | bool |     |               |     |
+| model             | str  |     |               |     |
+| mpi_id            | str  |     |               |     |
+| mpi_model         | str  |     |               |     |
+| mpi_type          | str  |     |               |     |
+| networkstate      | str  |     |               |     |
+| platform          | str  |     |               |     |
+| resource_id       | str  |     |               |     |
+| spm_id            | str  |     |               |     |
+| statistics        | str  |     |               |     |
+| sys_ver           | num  |     |               |     |
+| teenager_mode     | num  |     |               |     |
+| tel               | num  | √   |               |     |
+| token             | str  |     |               |     |
+| ts                | num  | √   |               |     |
+| tv_brand          | str  |     |               |     |
+| uid               | num  |     |               |     |
+| sign              | str  | √   |               |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注                                            |
+|---------|-----|------|-----------------------------------------------|
+| code    | num | 响应码  | 0：成功<br/>66031：手机号码格式不正确<br/>86046：请使用中国大陆手机号 |
+| message | str |      |                                               |
+| ttl     | num | 1    |                                               |
+| data    | obj | 信息本体 |                                               |
+
+### `data`对象
+
+| 字段名         | 类型  | 内容                  | 备注  |
+|-------------|-----|---------------------|-----|
+| captcha_key | str | 本次短信验证码的captcha_key |     |
+
+## 请求示例
+
+```shell
+curl -L -X POST 'https://passport.snm0516.aisee.tv/x/passport-tv-login/sms/send?appkey=4409e2ce8ffd12b8&cid=86&local_id=0&tel=xxx&ts=xxx&sign=xxx'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "captcha_key": "********************************"
+  }
+}
+```
+
+</details>
