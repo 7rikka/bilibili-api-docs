@@ -1,6 +1,6 @@
-# \[APP]\[TV端]获取登录二维码
+# 获取登录二维码
 
-> https://passport.bilibili.com/x/passport-tv-login/qrcode/auth_code
+> https://passport.snm0516.aisee.tv/x/passport-tv-login/qrcode/auth_code
 
 请求方式：`POST`
 
@@ -10,18 +10,49 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名      | 类型  | 必填  | 内容  | 备注  |
-|----------|-----|-----|-----|-----|
-| appkey   | str | √   |     |     |
-| build    | str |     |     |     |
-| c_locale | str |     |     |     |
-| channel  | str |     |     |     |
-| local_id | str | √   |     |     |
-| mobi_app | str |     |     |     |
-| platform | str |     |     |     |
-| s_locale | str |     |     |     |
-| ts       | str | √   |     |     |
-| sign     | str | √   |     |     |
+| 参数名               | 类型   | 必填  | 内容  | 备注  |
+|-------------------|------|-----|-----|-----|
+| appkey            | str  | √   |     |     |
+| bili_local_id     | str  |     |     |     |
+| brand             | str  |     |     |     |
+| build             | num  |     |     |     |
+| buvid             | str  |     |     |     |
+| channel           | str  |     |     |     |
+| cpu               | str  |     |     |     |
+| device            | str  |     |     |     |
+| device_id         | str  |     |     |     |
+| device_name       | str  |     |     |     |
+| device_platform   | str  |     |     |     |
+| device_tourist_id | num  |     |     |     |
+| explor_attr       | num  |     |     |     |
+| extend            | str  |     |     |     |
+| fingerprint       | str  |     |     |     |
+| fourk             | num  |     |     |     |
+| gourl             | str  |     |     |     |
+| guest_access_key  | str  |     |     |     |
+| guest_id          | num  |     |     |     |
+| guid              | str  |     |     |     |
+| local_fingerprint | str  |     |     |     |
+| local_id          | str  | √   |     |     |
+| login_session_id  | str  |     |     |     |
+| memory            | num  |     |     |     |
+| mobi_app          | str  |     |     |     |
+| mode_switch       | bool |     |     |     |
+| model             | str  |     |     |     |
+| mpi_id            | str  |     |     |     |
+| mpi_model         | str  |     |     |     |
+| mpi_type          | str  |     |     |     |
+| networkstate      | str  |     |     |     |
+| platform          | str  |     |     |     |
+| resource_id       | str  |     |     |     |
+| spm_id            | str  |     |     |     |
+| statistics        | str  |     |     |     |
+| sys_ver           | num  |     |     |     |
+| teenager_mode     | num  |     |     |     |
+| ts                | num  | √   |     |     |
+| tv_brand          | str  |     |     |     |
+| uid               | num  |     |     |     |
+| sign              | str  | √   |     |     |
 
 ## Json回复
 
@@ -44,7 +75,7 @@ Content-Type：`application/x-www-form-urlencoded`
 ## 请求示例
 
 ```shell
-curl -L -X POST 'https://passport.bilibili.com/x/passport-tv-login/qrcode/auth_code?local_id=0&mobi_app=android_bilithings&sign=573c48ef19383297aab5891d86c19ddb&appkey=8d23902c1688a798&ts=1664435004' \
+curl -L -X POST 'https://passport.snm0516.aisee.tv/x/passport-tv-login/qrcode/auth_code?local_id=0&build=105301&sign=aa746667caf6b2835479dec92491bf07&appkey=4409e2ce8ffd12b8&ts=1664521821'
 ```
 
 ## 响应示例
@@ -58,11 +89,12 @@ curl -L -X POST 'https://passport.bilibili.com/x/passport-tv-login/qrcode/auth_c
   "message": "0",
   "ttl": 1,
   "data": {
-    "url": "https://passport.bilibili.com/x/passport-tv-login/h5/qrcode/auth?auth_code=efbb1d7ea96d89f11d84fd59134a5c41&mobi_app=android_bilithings",
-    "auth_code": "efbb1d7ea96d89f11d84fd59134a5c41"
+    "url": "https://b23.snm0516.aisee.tv/oLXy75m",
+    "auth_code": "c5a119f119f51fce8e1bf7d772013701"
   }
 }
 ```
+
 </details>
 
 # \[APP]\[TV端]获取二维码扫描状态
@@ -191,4 +223,5 @@ curl -L -X POST 'https://passport.bilibili.com/x/passport-tv-login/qrcode/poll?a
   }
 }
 ```
+
 </details>
