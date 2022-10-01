@@ -201,3 +201,65 @@ curl -L -X GET 'https://api.snm0516.aisee.tv/x/tv/setting/privacy?access_key=***
 ```
 
 </details>
+
+# 修改个人隐私选项
+
+> https://api.snm0516.aisee.tv/x/tv/setting/privacy_submit
+
+请求方式：`POST`
+
+是否需要登录：`是`
+
+Content-Type：`application/json`
+
+## URL参数
+
+| 参数名              | 类型  | 必填  | 内容  | 备注  |
+|------------------|-----|-----|-----|-----|
+| access_key       | str | √   |     |     |
+| guest_access_key | str |     |     |     |
+
+## JSON参数
+
+| 参数名      | 类型    | 必填  | 内容  | 备注  |
+|----------|-------|-----|-----|-----|
+| settings | array | √   |     |     |
+
+### `settings`数组中的对象
+
+| 参数名            | 类型  | 必填  | 内容   | 备注  |
+|----------------|-----|-----|------|-----|
+| name           | str | √   | 选项名称 |     |
+| radio_selected | str | √   | 选择情况 | 0,1 |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注   |
+|---------|-----|------|------|
+| code    | num | 响应码  | 0：成功 |
+| message | str | 0    |      |
+| ttl     | num | 1    |      |
+
+## 请求示例
+
+```shell
+curl -L -X POST 'https://api.snm0516.aisee.tv/x/tv/setting/privacy_submit?access_key=********************************' \
+-H 'Content-Type: application/json' \
+--data-raw '{"settings":[{"name":"share_history","radio_selected":1}]}'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1
+}
+```
+</details>
