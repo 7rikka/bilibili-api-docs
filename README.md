@@ -44,6 +44,8 @@
   - [ ] 设置
     - [X] [获取个人隐私设置](setting/setting_tv.md#获取个人隐私设置)
     - [X] [修改个人隐私选项](setting/setting_tv.md#修改个人隐私选项)
+  - [ ] 分区
+    - [X] [获取分区列表](regin/regin_tv.md#获取分区列表)
 - [ ] 车机端
   - [X] 登录
     - [X] 二维码登录
