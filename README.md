@@ -23,6 +23,8 @@
   - [ ] 剧集
     - [X] [获取剧集基本信息](bangumi/info.md#获取剧集基本信息)
     - [X] [获取剧集分集信息](bangumi/info.md#获取剧集分集信息)
+  - [ ] 视频
+    - [ ] [获取视频播放流](video/playurl_web.md#获取视频播放流)
 - [ ] APP端
   - [ ] 登录
     - [ ] [获取登录二维码]()
@@ -39,7 +41,7 @@
       - [X] [获取公钥和盐值](login/password_tv.md#获取公钥和盐值)
       - [X] [账号密码登录](login/password_tv.md#账号密码登录)
       - [X] [密码加密示例](login/password_tv.md#密码加密示例)
-    - [X] [查询token有效时间](login/info.md#查询token有效时间)
+    - [X] [查询token有效时间](login/info_tv.md#查询token有效时间)
   - [ ] 通知
   - [ ] 设置
     - [X] [获取个人隐私设置](setting/setting_tv.md#获取个人隐私设置)
