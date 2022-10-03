@@ -80,6 +80,8 @@
 
 # 获取视频播放流
 
+**此接口为通用解析接口，除普通视频外，也可解析剧集视频**
+
 > https://api.bilibili.com/x/player/playurl
 
 请求方式：`GET`
@@ -158,8 +160,8 @@
 | mimeType       | str   | 格式类型     |                           |
 | mime_type      | str   | 格式类型     |                           |
 | codecs         | str   | 编码类型     |                           |
-| width          | num   | 视频高度     |                           |
-| height         | num   | 视频宽度     |                           |
+| width          | num   | 视频宽度     |                           |
+| height         | num   | 视频高度     |                           |
 | frameRate      | str   | 帧率       |                           |
 | frame_rate     | str   | 帧率       |                           |
 | sar            | str   | `1:1`    |                           |
