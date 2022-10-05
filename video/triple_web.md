@@ -10,14 +10,15 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## FORM参数
 
-| 参数名    | 类型  | 必填  | 内容           | 备注  |
-|--------|-----|-----|--------------|-----|
-| aid    | num | √   | 视频av号        |     |
-| csrf   | str | √   | 用户csrf       |     |
-| eab_x  | str |     | `2`          |     |
-| ramval | str |     | `3`          |     |
-| source | str |     | `web_normal` |     |
-| ga     | num |     | `1`          |     |
+| 参数名    | 类型  | 必填  | 内容           | 备注       |
+|--------|-----|-----|--------------|----------|
+| aid    | num | √   | 视频av号        | av,bv二选一 |
+| bvid   | str | √   | 视频bv号        | av,bv二选一 |
+| csrf   | str | √   | 用户csrf       |          |
+| eab_x  | str |     | `2`          |          |
+| ramval | str |     | `3`          |          |
+| source | str |     | `web_normal` |          |
+| ga     | num |     | `1`          |          |
 
 ## Json回复
 
