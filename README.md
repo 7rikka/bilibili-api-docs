@@ -36,6 +36,7 @@
     - [X] [获取视频播放流](bangumi/playurl_web.md#获取视频播放流)
   - [ ] 视频
     - [ ] [获取视频播放流](video/playurl_web.md#获取视频播放流)
+    - [X] [一键三连](video/triple_web.md#一键三连)
   - [ ] 课程
     - [ ] [获取视频播放流]()
 - [ ] APP端
