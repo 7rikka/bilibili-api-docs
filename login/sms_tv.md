@@ -50,7 +50,7 @@ Content-Type：`application/x-www-form-urlencoded`
 | statistics        | str  |     |               |     |
 | sys_ver           | num  |     |               |     |
 | teenager_mode     | num  |     |               |     |
-| tel               | num  | √   |               |     |
+| tel               | num  | √   | 手机号           |     |
 | token             | str  |     |               |     |
 | ts                | num  | √   |               |     |
 | tv_brand          | str  |     |               |     |

@@ -1162,3 +1162,80 @@ curl -L -X GET 'https://passport.bilibili.com/x/passport-login/country?appkey=78
 ```
 
 </details>
+
+# 申请发送短信
+
+> https://passport.bilibili.com/x/passport-login/sms/send
+
+请求方式：`POST`
+
+是否需要登录：`否`
+
+Content-Type：`application/x-www-form-urlencoded`
+
+## URL参数
+
+| 参数名               | 类型  | 必填  | 内容   | 备注  |
+|-------------------|-----|-----|------|-----|
+| appkey            | str | √   |      |     |
+| build             | num |     |      |     |
+| buvid             | str |     |      |     |
+| c_locale          | str |     |      |     |
+| channel           | str |     |      |     |
+| cid               | num | √   | 电话区号 |     |
+| device_tourist_id | num |     |      |     |
+| disable_rcmd      | num |     |      |     |
+| local_id          | str |     |      |     |
+| login_session_id  | str |     |      |     |
+| mobi_app          | str |     |      |     |
+| platform          | str |     |      |     |
+| s_locale          | str |     |      |     |
+| spm_id            | str |     |      |     |
+| statistics        | str |     |      |     |
+| tel               | num | √   | 手机号  |     |
+| ts                | num | √   |      |     |
+| sign              | str | √   |      |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注                       |
+|---------|-----|------|--------------------------|
+| code    | num | 响应码  | 0：成功<br/>66031：手机号码格式不正确 |
+| message | str |      |                          |
+| ttl     | num | 1    |                          |
+| data    | obj | 信息本体 |                          |
+
+### `data`对象
+
+| 字段名           | 类型   | 内容                  | 备注  |
+|---------------|------|---------------------|-----|
+| is_new        | bool | `false`             |     |
+| captcha_key   | str  | 本次短信验证码的captcha_key |     |
+| recaptcha_url | str  |                     |     |
+
+## 请求示例
+
+```shell
+curl -L -X GET 'https://passport.bilibili.com/x/passport-login/sms/send?sign=********************************&appkey=783bbb7264451d82&tel=***********&cid=86&ts=1665030647'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1,
+    "data": {
+        "is_new": false,
+        "captcha_key": "********************************",
+        "recaptcha_url": ""
+    }
+}
+```
+</details>
