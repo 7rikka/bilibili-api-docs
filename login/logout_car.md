@@ -10,25 +10,25 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名             | 类型  | 必填  | 内容  | 备注  |
-|-----------------|-----|-----|-----|-----|
-| access_key      | str | √   |     |     |
-| appkey          | str | √   |     |     |
-| bili_local_id   | str |     |     |     |
-| build           | str |     |     |     |
-| buvid           | str |     |     |     |
-| c_locale        | str |     |     |     |
-| channel         | str |     |     |     |
-| device          | str |     |     |     |
-| device_id       | str |     |     |     |
-| device_name     | str |     |     |     |
-| device_platform | str |     |     |     |
-| local_id        | str |     |     |     |
-| mobi_app        | str |     |     |     |
-| platform        | str |     |     |     |
-| s_locale        | str |     |     |     |
-| ts              | str | √   |     |     |
-| sign            | str | √   |     |     |
+| 参数名             | 类型  | 必填  | 内容    | 备注   |
+|-----------------|-----|-----|-------|------|
+| access_key      | str | √   |       |      |
+| appkey          | str | √   |       |      |
+| bili_local_id   | str |     |       |      |
+| build           | str |     |       |      |
+| buvid           | str |     |       |      |
+| c_locale        | str |     |       |      |
+| channel         | str |     |       |      |
+| device          | str |     |       |      |
+| device_id       | str |     |       |      |
+| device_name     | str |     |       |      |
+| device_platform | str |     |       |      |
+| local_id        | str |     |       |      |
+| mobi_app        | str |     |       |      |
+| platform        | str |     |       |      |
+| s_locale        | str |     |       |      |
+| ts              | str | √   | 当前时间戳 | 单位：秒 |
+| sign            | str | √   |       |      |
 
 ## Json回复
 

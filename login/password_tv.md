@@ -8,44 +8,44 @@
 
 ## URL参数
 
-| 参数名               | 类型   | 必填  | 内容  | 备注  |
-|-------------------|------|-----|-----|-----|
-| appkey            | str  |     |     |     |
-| bili_local_id     | str  |     |     |     |
-| brand             | str  |     |     |     |
-| build             | num  |     |     |     |
-| buvid             | str  |     |     |     |
-| channel           | str  |     |     |     |
-| cpu               | str  |     |     |     |
-| device            | str  |     |     |     |
-| device_id         | str  |     |     |     |
-| device_name       | str  |     |     |     |
-| device_platform   | str  |     |     |     |
-| explor_attr       | num  |     |     |     |
-| fingerprint       | str  |     |     |     |
-| fourk             | num  |     |     |     |
-| guest_access_key  | str  |     |     |     |
-| guest_id          | num  |     |     |     |
-| guid              | str  |     |     |     |
-| local_fingerprint | str  |     |     |     |
-| local_id          | str  |     |     |     |
-| memory            | num  |     |     |     |
-| mobi_app          | str  |     |     |     |
-| mode_switch       | bool |     |     |     |
-| model             | str  |     |     |     |
-| mpi_id            | str  |     |     |     |
-| mpi_model         | str  |     |     |     |
-| mpi_type          | str  |     |     |     |
-| networkstate      | str  |     |     |     |
-| platform          | str  |     |     |     |
-| resource_id       | str  |     |     |     |
-| statistics        | str  |     |     |     |
-| sys_ver           | num  |     |     |     |
-| teenager_mode     | num  |     |     |     |
-| ts                | num  |     |     |     |
-| tv_brand          | str  |     |     |     |
-| uid               | num  |     |     |     |
-| sign              | str  |     |     |     |
+| 参数名               | 类型   | 必填  | 内容    | 备注   |
+|-------------------|------|-----|-------|------|
+| appkey            | str  |     |       |      |
+| bili_local_id     | str  |     |       |      |
+| brand             | str  |     |       |      |
+| build             | num  |     |       |      |
+| buvid             | str  |     |       |      |
+| channel           | str  |     |       |      |
+| cpu               | str  |     |       |      |
+| device            | str  |     |       |      |
+| device_id         | str  |     |       |      |
+| device_name       | str  |     |       |      |
+| device_platform   | str  |     |       |      |
+| explor_attr       | num  |     |       |      |
+| fingerprint       | str  |     |       |      |
+| fourk             | num  |     |       |      |
+| guest_access_key  | str  |     |       |      |
+| guest_id          | num  |     |       |      |
+| guid              | str  |     |       |      |
+| local_fingerprint | str  |     |       |      |
+| local_id          | str  |     |       |      |
+| memory            | num  |     |       |      |
+| mobi_app          | str  |     |       |      |
+| mode_switch       | bool |     |       |      |
+| model             | str  |     |       |      |
+| mpi_id            | str  |     |       |      |
+| mpi_model         | str  |     |       |      |
+| mpi_type          | str  |     |       |      |
+| networkstate      | str  |     |       |      |
+| platform          | str  |     |       |      |
+| resource_id       | str  |     |       |      |
+| statistics        | str  |     |       |      |
+| sys_ver           | num  |     |       |      |
+| teenager_mode     | num  |     |       |      |
+| ts                | num  |     | 当前时间戳 | 单位：秒 |
+| tv_brand          | str  |     |       |      |
+| uid               | num  |     |       |      |
+| sign              | str  |     |       |      |
 
 ## Json回复
 
@@ -143,7 +143,7 @@ Content-Type：`application/x-www-form-urlencoded`
 | sys_ver           | num  |     |         |          |
 | teenager_mode     | num  |     |         |          |
 | token             | str  | √   | 密钥的hash |          |
-| ts                | num  | √   |         |          |
+| ts                | num  | √   | 当前时间戳   | 单位：秒     |
 | tv_brand          | str  |     |         |          |
 | uid               | num  |     |         |          |
 | username          | str  | √   | 登录用户名   | 手机号或邮箱地址 |

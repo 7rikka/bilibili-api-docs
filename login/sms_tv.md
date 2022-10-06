@@ -10,52 +10,52 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名               | 类型   | 必填  | 内容            | 备注  |
-|-------------------|------|-----|---------------|-----|
-| appkey            | str  | √   |               |     |
-| bili_local_id     | str  |     |               |     |
-| brand             | str  |     |               |     |
-| build             | num  |     |               |     |
-| buvid             | str  |     |               |     |
-| channel           | str  |     |               |     |
-| cid               | num  | √   | 中国大陆电话区号：`86` |     |
-| code              | str  |     |               |     |
-| cpu               | str  |     |               |     |
-| device            | str  |     |               |     |
-| device_id         | str  |     |               |     |
-| device_name       | str  |     |               |     |
-| device_platform   | str  |     |               |     |
-| device_tourist_id | num  |     |               |     |
-| explor_attr       | num  |     |               |     |
-| extend            | str  |     |               |     |
-| fingerprint       | str  |     |               |     |
-| fourk             | num  |     |               |     |
-| guest_access_key  | str  |     |               |     |
-| guest_id          | num  |     |               |     |
-| guid              | str  |     |               |     |
-| local_fingerprint | str  |     |               |     |
-| local_id          | str  | √   |               |     |
-| login_session_id  | str  |     |               |     |
-| memory            | num  |     |               |     |
-| mobi_app          | str  |     |               |     |
-| mode_switch       | bool |     |               |     |
-| model             | str  |     |               |     |
-| mpi_id            | str  |     |               |     |
-| mpi_model         | str  |     |               |     |
-| mpi_type          | str  |     |               |     |
-| networkstate      | str  |     |               |     |
-| platform          | str  |     |               |     |
-| resource_id       | str  |     |               |     |
-| spm_id            | str  |     |               |     |
-| statistics        | str  |     |               |     |
-| sys_ver           | num  |     |               |     |
-| teenager_mode     | num  |     |               |     |
-| tel               | num  | √   | 手机号           |     |
-| token             | str  |     |               |     |
-| ts                | num  | √   |               |     |
-| tv_brand          | str  |     |               |     |
-| uid               | num  |     |               |     |
-| sign              | str  | √   |               |     |
+| 参数名               | 类型   | 必填  | 内容            | 备注   |
+|-------------------|------|-----|---------------|------|
+| appkey            | str  | √   |               |      |
+| bili_local_id     | str  |     |               |      |
+| brand             | str  |     |               |      |
+| build             | num  |     |               |      |
+| buvid             | str  |     |               |      |
+| channel           | str  |     |               |      |
+| cid               | num  | √   | 中国大陆电话区号：`86` |      |
+| code              | str  |     |               |      |
+| cpu               | str  |     |               |      |
+| device            | str  |     |               |      |
+| device_id         | str  |     |               |      |
+| device_name       | str  |     |               |      |
+| device_platform   | str  |     |               |      |
+| device_tourist_id | num  |     |               |      |
+| explor_attr       | num  |     |               |      |
+| extend            | str  |     |               |      |
+| fingerprint       | str  |     |               |      |
+| fourk             | num  |     |               |      |
+| guest_access_key  | str  |     |               |      |
+| guest_id          | num  |     |               |      |
+| guid              | str  |     |               |      |
+| local_fingerprint | str  |     |               |      |
+| local_id          | str  | √   |               |      |
+| login_session_id  | str  |     |               |      |
+| memory            | num  |     |               |      |
+| mobi_app          | str  |     |               |      |
+| mode_switch       | bool |     |               |      |
+| model             | str  |     |               |      |
+| mpi_id            | str  |     |               |      |
+| mpi_model         | str  |     |               |      |
+| mpi_type          | str  |     |               |      |
+| networkstate      | str  |     |               |      |
+| platform          | str  |     |               |      |
+| resource_id       | str  |     |               |      |
+| spm_id            | str  |     |               |      |
+| statistics        | str  |     |               |      |
+| sys_ver           | num  |     |               |      |
+| teenager_mode     | num  |     |               |      |
+| tel               | num  | √   | 手机号           |      |
+| token             | str  |     |               |      |
+| ts                | num  | √   | 当前时间戳         | 单位：秒 |
+| tv_brand          | str  |     |               |      |
+| uid               | num  |     |               |      |
+| sign              | str  | √   |               |      |
 
 ## Json回复
 
@@ -110,52 +110,52 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名               | 类型   | 必填  | 内容                  | 备注  |
-|-------------------|------|-----|---------------------|-----|
-| appkey            | str  | √   |                     |     |
-| bili_local_id     | str  |     |                     |     |
-| brand             | str  |     |                     |     |
-| build             | num  |     |                     |     |
-| buvid             | str  |     |                     |     |
-| captcha_key       | str  | √   | 本次短信验证码的captcha_key |     |
-| channel           | str  |     |                     |     |
-| cid               | num  | √   | 中国大陆电话区号：`86`       |     |
-| code              | num  | √   | 短信验证码，6位数字          |     |
-| cpu               | str  |     |                     |     |
-| device            | str  |     |                     |     |
-| device_id         | str  |     |                     |     |
-| device_name       | str  |     |                     |     |
-| device_platform   | str  |     |                     |     |
-| device_tourist_id | num  |     |                     |     |
-| explor_attr       | num  |     |                     |     |
-| extend            | str  |     |                     |     |
-| fingerprint       | str  |     |                     |     |
-| fourk             | num  |     |                     |     |
-| guest_access_key  | str  |     |                     |     |
-| guest_id          | num  |     |                     |     |
-| guid              | str  |     |                     |     |
-| local_fingerprint | str  |     |                     |     |
-| local_id          | str  | √   |                     |     |
-| login_session_id  | str  |     |                     |     |
-| memory            | num  |     |                     |     |
-| mobi_app          | str  |     |                     |     |
-| mode_switch       | bool |     |                     |     |
-| model             | str  |     |                     |     |
-| mpi_id            | str  |     |                     |     |
-| mpi_model         | str  |     |                     |     |
-| mpi_type          | str  |     |                     |     |
-| networkstate      | str  |     |                     |     |
-| platform          | str  |     |                     |     |
-| resource_id       | str  |     |                     |     |
-| spm_id            | str  |     |                     |     |
-| statistics        | str  |     |                     |     |
-| sys_ver           | num  |     |                     |     |
-| teenager_mode     | num  |     |                     |     |
-| tel               | num  | √   |                     |     |
-| ts                | num  | √   |                     |     |
-| tv_brand          | str  |     |                     |     |
-| uid               | num  |     |                     |     |
-| sign              | str  | √   |                     |     |
+| 参数名               | 类型   | 必填  | 内容                  | 备注   |
+|-------------------|------|-----|---------------------|------|
+| appkey            | str  | √   |                     |      |
+| bili_local_id     | str  |     |                     |      |
+| brand             | str  |     |                     |      |
+| build             | num  |     |                     |      |
+| buvid             | str  |     |                     |      |
+| captcha_key       | str  | √   | 本次短信验证码的captcha_key |      |
+| channel           | str  |     |                     |      |
+| cid               | num  | √   | 中国大陆电话区号：`86`       |      |
+| code              | num  | √   | 短信验证码，6位数字          |      |
+| cpu               | str  |     |                     |      |
+| device            | str  |     |                     |      |
+| device_id         | str  |     |                     |      |
+| device_name       | str  |     |                     |      |
+| device_platform   | str  |     |                     |      |
+| device_tourist_id | num  |     |                     |      |
+| explor_attr       | num  |     |                     |      |
+| extend            | str  |     |                     |      |
+| fingerprint       | str  |     |                     |      |
+| fourk             | num  |     |                     |      |
+| guest_access_key  | str  |     |                     |      |
+| guest_id          | num  |     |                     |      |
+| guid              | str  |     |                     |      |
+| local_fingerprint | str  |     |                     |      |
+| local_id          | str  | √   |                     |      |
+| login_session_id  | str  |     |                     |      |
+| memory            | num  |     |                     |      |
+| mobi_app          | str  |     |                     |      |
+| mode_switch       | bool |     |                     |      |
+| model             | str  |     |                     |      |
+| mpi_id            | str  |     |                     |      |
+| mpi_model         | str  |     |                     |      |
+| mpi_type          | str  |     |                     |      |
+| networkstate      | str  |     |                     |      |
+| platform          | str  |     |                     |      |
+| resource_id       | str  |     |                     |      |
+| spm_id            | str  |     |                     |      |
+| statistics        | str  |     |                     |      |
+| sys_ver           | num  |     |                     |      |
+| teenager_mode     | num  |     |                     |      |
+| tel               | num  | √   |                     |      |
+| ts                | num  | √   | 当前时间戳               | 单位：秒 |
+| tv_brand          | str  |     |                     |      |
+| uid               | num  |     |                     |      |
+| sign              | str  | √   |                     |      |
 
 ## Json回复
 

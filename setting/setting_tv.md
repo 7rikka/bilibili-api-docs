@@ -10,34 +10,34 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名              | 类型   | 必填  | 内容  | 备注  |
-|------------------|------|-----|-----|-----|
-| access_key       | str  | √   |     |     |
-| appkey           | str  |     |     |     |
-| brand            | str  |     |     |     |
-| build            | num  |     |     |     |
-| channel          | str  |     |     |     |
-| cpu              | str  |     |     |     |
-| explor_attr      | num  |     |     |     |
-| fourk            | num  |     |     |     |
-| guest_access_key | str  |     |     |     |
-| guest_id         | num  |     |     |     |
-| memory           | num  |     |     |     |
-| mobi_app         | str  |     |     |     |
-| mode_switch      | bool |     |     |     |
-| model            | str  |     |     |     |
-| mpi_id           | str  |     |     |     |
-| mpi_model        | str  |     |     |     |
-| mpi_type         | str  |     |     |     |
-| platform         | str  |     |     |     |
-| resource_id      | str  |     |     |     |
-| statistics       | str  |     |     |     |
-| sys_ver          | num  |     |     |     |
-| teenager_mode    | num  |     |     |     |
-| ts               | num  |     |     |     |
-| tv_brand         | str  |     |     |     |
-| uid              | num  |     |     |     |
-| sign             | str  |     |     |     |
+| 参数名              | 类型   | 必填  | 内容    | 备注   |
+|------------------|------|-----|-------|------|
+| access_key       | str  | √   |       |      |
+| appkey           | str  |     |       |      |
+| brand            | str  |     |       |      |
+| build            | num  |     |       |      |
+| channel          | str  |     |       |      |
+| cpu              | str  |     |       |      |
+| explor_attr      | num  |     |       |      |
+| fourk            | num  |     |       |      |
+| guest_access_key | str  |     |       |      |
+| guest_id         | num  |     |       |      |
+| memory           | num  |     |       |      |
+| mobi_app         | str  |     |       |      |
+| mode_switch      | bool |     |       |      |
+| model            | str  |     |       |      |
+| mpi_id           | str  |     |       |      |
+| mpi_model        | str  |     |       |      |
+| mpi_type         | str  |     |       |      |
+| platform         | str  |     |       |      |
+| resource_id      | str  |     |       |      |
+| statistics       | str  |     |       |      |
+| sys_ver          | num  |     |       |      |
+| teenager_mode    | num  |     |       |      |
+| ts               | num  |     | 当前时间戳 | 单位：秒 |
+| tv_brand         | str  |     |       |      |
+| uid              | num  |     |       |      |
+| sign             | str  |     |       |      |
 
 ## Json回复
 

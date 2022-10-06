@@ -10,18 +10,18 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名      | 类型  | 必填  | 内容  | 备注  |
-|----------|-----|-----|-----|-----|
-| appkey   | str | √   |     |     |
-| build    | str |     |     |     |
-| c_locale | str |     |     |     |
-| channel  | str |     |     |     |
-| local_id | str | √   |     |     |
-| mobi_app | str |     |     |     |
-| platform | str |     |     |     |
-| s_locale | str |     |     |     |
-| ts       | str | √   |     |     |
-| sign     | str | √   |     |     |
+| 参数名      | 类型  | 必填  | 内容    | 备注   |
+|----------|-----|-----|-------|------|
+| appkey   | str | √   |       |      |
+| build    | str |     |       |      |
+| c_locale | str |     |       |      |
+| channel  | str |     |       |      |
+| local_id | str | √   |       |      |
+| mobi_app | str |     |       |      |
+| platform | str |     |       |      |
+| s_locale | str |     |       |      |
+| ts       | str | √   | 当前时间戳 | 单位：秒 |
+| sign     | str | √   |       |      |
 
 ## Json回复
 
@@ -78,19 +78,19 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名       | 类型  | 必填  | 内容      | 备注  |
-|-----------|-----|-----|---------|-----|
-| appkey    | str | √   |         |     |
-| auth_code | str | √   | 验证码code |     |
-| build     | str |     |         |     |
-| c_locale  | str |     |         |     |
-| channel   | str |     |         |     |
-| local_id  | str | √   |         |     |
-| mobi_app  | str |     |         |     |
-| platform  | str |     |         |     |
-| s_locale  | str |     |         |     |
-| ts        | str | √   |         |     |
-| sign      | str | √   |         |     |
+| 参数名       | 类型  | 必填  | 内容      | 备注   |
+|-----------|-----|-----|---------|------|
+| appkey    | str | √   |         |      |
+| auth_code | str | √   | 验证码code |      |
+| build     | str |     |         |      |
+| c_locale  | str |     |         |      |
+| channel   | str |     |         |      |
+| local_id  | str | √   |         |      |
+| mobi_app  | str |     |         |      |
+| platform  | str |     |         |      |
+| s_locale  | str |     |         |      |
+| ts        | str | √   | 当前时间戳   | 单位：秒 |
+| sign      | str | √   |         |      |
 
 ## Json回复
 
