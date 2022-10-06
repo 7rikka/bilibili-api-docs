@@ -176,7 +176,7 @@ Content-Type：`application/x-www-form-urlencoded`
 | mid           | num  | 当前用户id    |                     |
 | access_token  | str  | 登录状态token |                     |
 | refresh_token | str  | 刷新token   |                     |
-| expires_in    | num  | 有效时长      | 默认：15552000秒，等于180天 |
+| expires_in    | num  | 有效时长      | 固定为15552000秒，等于180天 |
 | token_info    |      | `null`    |                     |
 | cookie_info   |      | `null`    |                     |
 | sso           |      | `null`    |                     |
