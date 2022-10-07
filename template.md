@@ -8,6 +8,8 @@
 是否需要登录：`是`
 是否需要登录：`否`
 
+鉴权方式：`SESSDATA`/`access_key`
+
 Content-Type：`application/x-www-form-urlencoded`
 Content-Type：`application/json`
 
