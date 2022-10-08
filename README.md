@@ -83,5 +83,6 @@
     - [X] [退出登录](login/logout_car.md#退出登录)
   - [ ] 搜索
     - [X] [搜索建议](search/search_car.md#搜索建议)
+    - [X] [搜索](search/search_car.md#搜索)
 - [ ] 其他
   - [X] [获取当前时间戳](other/now.md#获取当前时间戳)
