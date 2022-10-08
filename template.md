@@ -44,6 +44,14 @@ Content-Type：`application/json`
 
 ## 请求示例
 
+### `SESSDATA`方式
+
+```shell
+
+```
+
+### `access_key`方式
+
 ```shell
 
 ```
@@ -56,4 +64,5 @@ Content-Type：`application/json`
 ```json
 
 ```
+
 </details>
