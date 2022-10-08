@@ -81,5 +81,7 @@
       - [X] [获取登录二维码](login/qr_car.md#获取登录二维码)
       - [X] [获取二维码扫描状态](login/qr_car.md#获取二维码扫描状态)
     - [X] [退出登录](login/logout_car.md#退出登录)
+  - [ ] 搜索
+    - [X] [搜索建议](search/search_car.md#搜索建议)
 - [ ] 其他
   - [X] [获取当前时间戳](other/now.md#获取当前时间戳)
