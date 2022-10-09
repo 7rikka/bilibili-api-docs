@@ -64,9 +64,9 @@
 | act_id            | num   |          |        |
 | dispute           |       | `null`   |        |
 | authenMark        |       | `null`   |        |
-| cover_avid        | num   |          |        |
+| cover_avid        | num   | 关联视频av号         |        |
 | top_video_info    |       | `null`   |        |
-| type              | num   |          |        |
+| type              | num   |          |   0：`cover_avid`为0<br/>2：`cover_avid`不为0 |
 | check_state       | num   |          |        |
 | rec               | bool  |          |        |
 | rec_flag          | bool  |          |        |

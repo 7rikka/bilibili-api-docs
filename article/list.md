@@ -37,38 +37,38 @@
 
 ### `data`对象 -> `articles`数组中的对象
 
-| 字段名               | 类型    | 内容       | 备注   |
-|-------------------|-------|----------|------|
-| id                | num   | 专栏文章id   |      |
-| category          | obj   | 分类       |      |
-| categories        | array | 分类       |      |
-| title             | str   | 标题       |      |
-| summary           | str   | 摘要       |      |
-| banner_url        | str   | 封面图      |      |
-| template_id       | num   | `3` `4`  |      |
-| state             | num   | `0`      |      |
-| author            | obj   | UP主信息    |      |
-| reprint           | num   |          |      |
-| image_urls        | array |          |      |
-| publish_time      | num   | 发布时间戳    | 单位：秒 |
-| ctime             | num   | 提交时间戳    | 单位：秒 |
-| stats             | obj   | 专栏文章数据统计 |      |
-| tags              | array | 标签       |      |
-| words             | num   | 字数       |      |
-| dynamic           | str   | 粉丝动态文案   |      |
-| origin_image_urls | array |          |      |
-| list              | obj   | 所属文集信息   |      |
-| is_like           | bool  |          |      |
-| media             | obj   | 关联剧集信息   |      |
-| apply_time        | str   | `空串`     |      |
-| check_time        | str   | `空串`     |      |
-| original          | num   |          |      |
-| act_id            | num   |          |      |
-| dispute           |       | `null`   |      |
-| authenMark        |       | `null`   |      |
-| cover_avid        | num   |          |      |
-| top_video_info    |       | `null`   |      |
-| type              | num   |          |      |
+| 字段名               | 类型    | 内容       | 备注                                     |
+|-------------------|-------|----------|----------------------------------------|
+| id                | num   | 专栏文章id   |                                        |
+| category          | obj   | 分类       |                                        |
+| categories        | array | 分类       |                                        |
+| title             | str   | 标题       |                                        |
+| summary           | str   | 摘要       |                                        |
+| banner_url        | str   | 封面图      |                                        |
+| template_id       | num   | `3` `4`  |                                        |
+| state             | num   | `0`      |                                        |
+| author            | obj   | UP主信息    |                                        |
+| reprint           | num   |          |                                        |
+| image_urls        | array |          |                                        |
+| publish_time      | num   | 发布时间戳    | 单位：秒                                   |
+| ctime             | num   | 提交时间戳    | 单位：秒                                   |
+| stats             | obj   | 专栏文章数据统计 |                                        |
+| tags              | array | 标签       |                                        |
+| words             | num   | 字数       |                                        |
+| dynamic           | str   | 粉丝动态文案   |                                        |
+| origin_image_urls | array |          |                                        |
+| list              | obj   | 所属文集信息   |                                        |
+| is_like           | bool  |          |                                        |
+| media             | obj   | 关联剧集信息   |                                        |
+| apply_time        | str   | `空串`     |                                        |
+| check_time        | str   | `空串`     |                                        |
+| original          | num   |          |                                        |
+| act_id            | num   |          |                                        |
+| dispute           |       | `null`   |                                        |
+| authenMark        |       | `null`   |                                        |
+| cover_avid        | num   | 关联视频av号  |                                        |
+| top_video_info    |       | `null`   |                                        |
+| type              | num   |          | 0：`cover_avid`为0<br/>2：`cover_avid`不为0 |
 
 ### `data`对象 -> `articles`数组中的对象 -> `category`对象
 
