@@ -57,7 +57,7 @@
 | words             | num   | 字数       |      |
 | dynamic           | str   | 粉丝动态文案   |      |
 | origin_image_urls | array |          |      |
-| list              |       | `null`   |      |
+| list              | obj   | 所属文集信息   |      |
 | is_like           | bool  |          |      |
 | media             | obj   | 关联剧集信息   |      |
 | apply_time        | str   | `空串`     |      |
@@ -158,6 +158,26 @@
 | share    | num | 转发数 |       |
 | coin     | num | 投币数 |       |
 | dynamic  | num |     |       |
+
+### `data`对象 -> `articles`数组中的对象 -> `list`对象
+
+| 字段名            | 类型  | 内容      | 备注   |
+|----------------|-----|---------|------|
+| id             | num | 文集id    |      |
+| mid            | num | 作者uid   |      |
+| name           | str | 文集名称    |      |
+| image_url      | str | 封面      |      |
+| update_time    | num | 最后更新时间戳 | 单位：秒 |
+| ctime          | num | 创建时间戳   | 单位：秒 |
+| publish_time   | num |         | 单位：秒 |
+| summary        | str |         |      |
+| words          | num | 总字数     |      |
+| read           | num |         |      |
+| articles_count | num |         |      |
+| state          | num |         |      |
+| reason         | num |         |      |
+| apply_time     | num |         |      |
+| check_time     | num |         |      |
 
 ### `data`对象 -> `articles`数组中的对象 -> `tags`数组中的对象
 
