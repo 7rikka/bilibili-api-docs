@@ -45,8 +45,8 @@
 | title             | str   | 标题       |      |
 | summary           | str   | 摘要       |      |
 | banner_url        | str   | 封面图      |      |
-| template_id       | num   |          |      |
-| state             | num   |          |      |
+| template_id       | num   | `3` `4`  |      |
+| state             | num   | `0`      |      |
 | author            | obj   | UP主信息    |      |
 | reprint           | num   |          |      |
 | image_urls        | array |          |      |
@@ -54,12 +54,12 @@
 | ctime             | num   | 提交时间戳    | 单位：秒 |
 | stats             | obj   | 专栏文章数据统计 |      |
 | tags              | array | 标签       |      |
-| words             | num   |          |      |
+| words             | num   | 字数       |      |
 | dynamic           | str   | 粉丝动态文案   |      |
 | origin_image_urls | array |          |      |
 | list              |       | `null`   |      |
 | is_like           | bool  |          |      |
-| media             | obj   |          |      |
+| media             | obj   | 关联剧集信息   |      |
 | apply_time        | str   | `空串`     |      |
 | check_time        | str   | `空串`     |      |
 | original          | num   |          |      |
@@ -168,16 +168,16 @@
 
 ### `data`对象 -> `articles`数组中的对象 -> `media`对象
 
-| 字段名       | 类型  | 内容   | 备注  |
-|-----------|-----|------|-----|
-| score     | num | `0`  |     |
-| media_id  | num | `0`  |     |
-| title     | str | `空串` |     |
-| cover     | str | `空串` |     |
-| area      | str | `空串` |     |
-| type_id   | num | `0`  |     |
-| type_name | str | `空串` |     |
-| spoiler   | num | `0`  |     |
+| 字段名       | 类型  | 内容            | 备注  |
+|-----------|-----|---------------|-----|
+| score     | num | `0`           |     |
+| media_id  | num | 关联剧集的media_id |     |
+| title     | str | `空串`          |     |
+| cover     | str | `空串`          |     |
+| area      | str | `空串`          |     |
+| type_id   | num | `0`           |     |
+| type_name | str | `空串`          |     |
+| spoiler   | num | `0` `1`       |     |
 
 ## 请求示例
 
