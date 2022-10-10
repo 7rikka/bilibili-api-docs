@@ -53,9 +53,9 @@
     - [X] [关注/取消关注用户](user/relation.md#关注取消关注用户)
   - [ ] 空间
     - [X] [获取预约信息](space/reservation.md#获取预约信息)
-    - [X] [预约（通过动态中的按钮）](space/reservation.md#预约（通过动态中的按钮）)
-    - [X] [预约（通过UP主个人空间中的按钮）](space/reservation.md#预约（通过UP主个人空间中的按钮）)
-    - [X] [取消预约（通过UP主个人空间中的按钮）](space/reservation.md#取消预约（通过UP主个人空间中的按钮）)
+    - [X] [预约（通过动态中的按钮）](space/reservation.md#预约通过动态中的按钮)
+    - [X] [预约（通过UP主个人空间中的按钮）](space/reservation.md#预约通过up主个人空间中的按钮)
+    - [X] [取消预约（通过UP主个人空间中的按钮）](space/reservation.md#取消预约通过up主个人空间中的按钮)
 - [ ] APP端
   - [ ] 登录
     - [ ] 账号密码登录
