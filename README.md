@@ -42,6 +42,7 @@
     - [X] [获取用户专栏文集列表](article/list.md#获取用户专栏文集列表)
     - [X] [获取专栏推荐文章](article/recommends.md#获取专栏推荐文章)
     - [X] [专栏排行榜](article/rank.md#专栏排行榜)
+    - [X] [获取文集信息](article/readlist.md#获取文集信息)
   - [ ] 课程
     - [ ] [获取视频播放流]()
   - [ ] 大会员
@@ -49,7 +50,7 @@
       - [X] [查询卡券状态](vip/privilege.md#查询卡券状态)
       - [X] [兑换卡券](vip/privilege.md#兑换卡券)
   - [ ] 用户
-    - [X] [关注/取消关注用户](user/relation.md#关注/取消关注用户)
+    - [X] [关注/取消关注用户](user/relation.md#关注取消关注用户)
 - [ ] APP端
   - [ ] 登录
     - [ ] 账号密码登录
