@@ -196,7 +196,7 @@ Content-Type：`application/x-www-form-urlencoded`
 | 字段名     | 类型  | 内容  | 备注                     |
 |---------|-----|-----|------------------------|
 | code    | num | 响应码 | 0：成功<br/>75077：重复参加活动! |
-| message | str |    |                        |
+| message | str |     |                        |
 | ttl     | num | 1   |                        |
 
 ## 请求示例
@@ -207,6 +207,58 @@ curl -L -X POST 'https://api.bilibili.com/x/space/reserve' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'sid=470047' \
 --data-urlencode 'csrf=xxx'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1
+}
+```
+
+</details>
+
+# 取消预约（通过UP主个人空间中的按钮）
+
+> https://api.bilibili.com/x/space/reserve/cancel
+
+请求方式：`POST`
+
+是否需要登录：`是`
+
+Content-Type：`application/x-www-form-urlencoded`
+
+## FORM参数
+
+| 参数名  | 类型  | 必填  | 内容     | 备注  |
+|------|-----|-----|--------|-----|
+| sid  | num | √   | 预约id   |     |
+| csrf | num | √   | 用户csrf |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注   |
+|---------|-----|------|------|
+| code    | num | 响应码  | 0：成功 |
+| message | str | 0    |      |
+| ttl     | num | 1    |      |
+
+## 请求示例
+
+```shell
+curl -L -X POST 'https://api.bilibili.com/x/space/reserve/cancel' \
+-H 'cookie: SESSDATA=f8a85dac%2C1679324747%2C0fb3b%2A91' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'sid=470047' \
+--data-urlencode 'csrf=c17dfdf0c89b40858eb6224795d75484'
 ```
 
 ## 响应示例
