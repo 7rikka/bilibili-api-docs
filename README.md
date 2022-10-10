@@ -51,6 +51,8 @@
       - [X] [兑换卡券](vip/privilege.md#兑换卡券)
   - [ ] 用户
     - [X] [关注/取消关注用户](user/relation.md#关注取消关注用户)
+  - [ ] 空间
+    - [X] [获取预约信息](space/reservation.md#获取预约信息)
 - [ ] APP端
   - [ ] 登录
     - [ ] 账号密码登录
