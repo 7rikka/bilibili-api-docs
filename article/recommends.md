@@ -168,8 +168,8 @@
 | image_url      | str | 封面      |      |
 | update_time    | num | 最后更新时间戳 | 单位：秒 |
 | ctime          | num | 创建时间戳   | 单位：秒 |
-| publish_time   | num |         | 单位：秒 |
-| summary        | str |         |      |
+| publish_time   | num | 发布时间戳   | 单位：秒  |
+| summary        | str | 简介      |      |
 | words          | num | 总字数     |      |
 | read           | num |         |      |
 | articles_count | num |         |      |

@@ -148,16 +148,16 @@
 
 ### `data`对象 -> `articles`数组中的对象 -> `stats`对象
 
-| 字段名      | 类型  | 内容  | 备注    |
-|----------|-----|-----|-------|
-| view     | num | 浏览数 |       |
-| favorite | num | 收藏数 |       |
-| like     | num | 点赞数 |       |
-| dislike  | num | 点踩数 | 恒为`0` |
-| reply    | num | 回复数 |       |
-| share    | num | 转发数 |       |
-| coin     | num | 投币数 |       |
-| dynamic  | num |     |       |
+| 字段名      | 类型  | 内容    | 备注    |
+|----------|-----|-------|-------|
+| view     | num | 浏览数   |       |
+| favorite | num | 收藏数   |       |
+| like     | num | 点赞数   |       |
+| dislike  | num | 点踩数   | 恒为`0` |
+| reply    | num | 回复数   |       |
+| share    | num | 转发数   |       |
+| coin     | num | 投币数   |       |
+| dynamic  | num | 动态转发数 |       |
 
 ### `data`对象 -> `articles`数组中的对象 -> `list`对象
 

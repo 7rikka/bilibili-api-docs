@@ -43,8 +43,8 @@
 | image_url      | str | 封面      |      |
 | update_time    | num | 最后更新时间戳 | 单位：秒 |
 | ctime          | num | 创建时间戳   | 单位：秒 |
-| publish_time   | num |         | 单位：秒 |
-| summary        | str | `空串`    |      |
+| publish_time   | num | 发布时间    | 单位：秒 |
+| summary        | str | 简介      |      |
 | words          | num | 总字数     |      |
 | read           | num | 阅读量     |      |
 | articles_count | num | 包含文章数   |      |
@@ -84,6 +84,19 @@
 | id        | num | 分类id   |     |
 | parent_id | num | 父级分类id |     |
 | name      | str | 分类名称   |     |
+
+### `data`对象 -> `articles`数组中的对象 -> `stats`对象
+
+| 字段名      | 类型  | 内容    | 备注    |
+|----------|-----|-------|-------|
+| view     | num | 浏览数   |       |
+| favorite | num | 收藏数   |       |
+| like     | num | 点赞数   |       |
+| dislike  | num | 点踩数   | 恒为`0` |
+| reply    | num | 回复数   |       |
+| share    | num | 转发数   |       |
+| coin     | num | 投币数   |       |
+| dynamic  | num | 动态转发数 |       |
 
 ### `data`对象 -> `author`对象
 
