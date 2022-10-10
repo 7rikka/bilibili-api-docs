@@ -171,3 +171,55 @@ curl -L -X POST 'https://api.vc.bilibili.com/dynamic_mix/v1/dynamic_mix/reserve_
 ```
 
 </details>
+
+# 预约（通过UP主个人空间中的按钮）
+
+> https://api.bilibili.com/x/space/reserve
+
+请求方式：`POST`
+
+是否需要登录：`是`
+
+Content-Type：`application/x-www-form-urlencoded`
+
+## FORM参数
+
+| 参数名  | 类型  | 必填  | 内容     | 备注  |
+|------|-----|-----|--------|-----|
+| sid  | num | √   | 预约id   |     |
+| csrf | num | √   | 用户csrf |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容  | 备注                     |
+|---------|-----|-----|------------------------|
+| code    | num | 响应码 | 0：成功<br/>75077：重复参加活动! |
+| message | str |    |                        |
+| ttl     | num | 1   |                        |
+
+## 请求示例
+
+```shell
+curl -L -X POST 'https://api.bilibili.com/x/space/reserve' \
+-H 'cookie: SESSDATA=xxx' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'sid=470047' \
+--data-urlencode 'csrf=xxx'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1
+}
+```
+
+</details>
