@@ -17,12 +17,6 @@
 | aids  | str |     |      |                                                         |
 | sort  | num |     | 排序方式 | 0：默认排序<br/>1：投稿时间排序<br/>2：点赞数最多<br/>3：评论数最多<br/>4：收藏数最多 |
 
-## FORM参数
-
-| 参数名 | 类型  | 必填  | 内容  | 备注  |
-|-----|-----|-----|-----|-----|
-| xxx | str |     |     |     |
-
 ## Json回复
 
 ### 根对象
@@ -36,44 +30,44 @@
 
 ### `data`数组中的对象
 
-| 字段名               | 类型    | 内容       | 备注     |
-|-------------------|-------|----------|--------|
-| id                | num   | 专栏文章id   |        |
-| category          | obj   | 分类       |        |
-| categories        | array | 分类       |        |
-| title             | str   | 标题       |        |
-| summary           | str   | 摘要       |        |
-| banner_url        | str   | 封面图      |        |
-| template_id       | num   | `3` `4`  |        |
-| state             | num   | `0`      |        |
-| author            | obj   | UP主信息    |        |
-| reprint           | num   |          |        |
-| image_urls        | array |          |        |
-| publish_time      | num   | 发布时间戳    | 单位：秒   |
-| ctime             | num   | 提交时间戳    | 单位：秒   |
-| stats             | obj   | 专栏文章数据统计 |        |
-| attributes        | num   |          | 部分文章拥有 |
-| words             | num   | 字数       |        |
-| origin_image_urls | array |          |        |
-| list              | obj   | 所属文集信息   |        |
-| is_like           | bool  |          |        |
-| media             | obj   | 关联剧集信息   |        |
-| apply_time        | str   |          |        |
-| check_time        | str   |          |        |
-| original          | num   |          |        |
-| act_id            | num   |          |        |
-| dispute           |       | `null`   |        |
-| authenMark        |       | `null`   |        |
-| cover_avid        | num   | 关联视频av号         |        |
-| top_video_info    |       | `null`   |        |
-| type              | num   |          |   0：`cover_avid`为0<br/>2：`cover_avid`不为0 |
-| check_state       | num   |          |        |
-| rec               | bool  |          |        |
-| rec_flag          | bool  |          |        |
-| rec_text          | str   |          |        |
-| rec_image_url     | str   |          |        |
-| view_url          | str   | 文章url    |        |
-| like_state        | num   |          |        |
+| 字段名               | 类型    | 内容       | 备注                                     |
+|-------------------|-------|----------|----------------------------------------|
+| id                | num   | 专栏文章id   |                                        |
+| category          | obj   | 分类       |                                        |
+| categories        | array | 分类       |                                        |
+| title             | str   | 标题       |                                        |
+| summary           | str   | 摘要       |                                        |
+| banner_url        | str   | 封面图      |                                        |
+| template_id       | num   | `3` `4`  |                                        |
+| state             | num   | `0`      |                                        |
+| author            | obj   | UP主信息    |                                        |
+| reprint           | num   |          |                                        |
+| image_urls        | array |          |                                        |
+| publish_time      | num   | 发布时间戳    | 单位：秒                                   |
+| ctime             | num   | 提交时间戳    | 单位：秒                                   |
+| stats             | obj   | 专栏文章数据统计 |                                        |
+| attributes        | num   |          | 部分文章拥有                                 |
+| words             | num   | 字数       |                                        |
+| origin_image_urls | array |          |                                        |
+| list              | obj   | 所属文集信息   |                                        |
+| is_like           | bool  |          |                                        |
+| media             | obj   | 关联剧集信息   |                                        |
+| apply_time        | str   |          |                                        |
+| check_time        | str   |          |                                        |
+| original          | num   |          |                                        |
+| act_id            | num   |          |                                        |
+| dispute           |       | `null`   |                                        |
+| authenMark        |       | `null`   |                                        |
+| cover_avid        | num   | 关联视频av号  |                                        |
+| top_video_info    |       | `null`   |                                        |
+| type              | num   |          | 0：`cover_avid`为0<br/>2：`cover_avid`不为0 |
+| check_state       | num   |          |                                        |
+| rec               | bool  |          |                                        |
+| rec_flag          | bool  |          |                                        |
+| rec_text          | str   |          |                                        |
+| rec_image_url     | str   |          |                                        |
+| view_url          | str   | 文章url    |                                        |
+| like_state        | num   |          |                                        |
 
 ### `data`数组中的对象 -> `category`对象
 
