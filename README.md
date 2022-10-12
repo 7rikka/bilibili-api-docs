@@ -51,6 +51,9 @@
       - [X] [兑换卡券](vip/privilege.md#兑换卡券)
   - [ ] 用户
     - [X] [关注/取消关注用户](user/relation.md#关注取消关注用户)
+    - [ ] 关注分组
+      - [X] [获取关注分组列表](user/tag.md#获取关注分组列表)
+      - [X] [创建关注分组](user/tag.md#创建关注分组)
   - [ ] 空间
     - [X] [获取预约信息](space/reservation.md#获取预约信息)
     - [X] [预约（通过动态中的按钮）](space/reservation.md#预约通过动态中的按钮)
