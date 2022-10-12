@@ -40,23 +40,23 @@ curl -L -X GET 'https://api.bilibili.com/x/relation/tags' \
 
 ```json
 {
-    "code": 0,
-    "message": "0",
-    "ttl": 1,
-    "data": [
-        {
-            "tagid": -10,
-            "name": "特别关注",
-            "count": 29,
-            "tip": "第一时间收到该分组下用户更新稿件的通知"
-        },
-        {
-            "tagid": 0,
-            "name": "默认分组",
-            "count": 1276,
-            "tip": ""
-        }
-    ]
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": [
+    {
+      "tagid": -10,
+      "name": "特别关注",
+      "count": 29,
+      "tip": "第一时间收到该分组下用户更新稿件的通知"
+    },
+    {
+      "tagid": 0,
+      "name": "默认分组",
+      "count": 1276,
+      "tip": ""
+    }
+  ]
 }
 ```
 
@@ -113,12 +113,12 @@ curl -L -X POST 'https://api.bilibili.com/x/relation/tag/create' \
 
 ```json
 {
-    "code": 0,
-    "message": "0",
-    "ttl": 1,
-    "data": {
-        "tagid": 10086
-    }
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "tagid": 10086
+  }
 }
 ```
 
@@ -170,9 +170,61 @@ curl -L -X POST 'https://api.bilibili.com/x/relation/tag/update' \
 
 ```json
 {
-    "code": 0,
-    "message": "0",
-    "ttl": 1
+  "code": 0,
+  "message": "0",
+  "ttl": 1
+}
+```
+
+</details>
+
+# 删除关注分组
+
+> https://api.bilibili.com/x/relation/tag/del
+
+请求方式：`POST`
+
+是否需要登录：`是`
+
+Content-Type：`application/x-www-form-urlencoded`
+
+## FORM参数
+
+| 参数名   | 类型  | 必填  | 内容     | 备注  |
+|-------|-----|-----|--------|-----|
+| tagid | str | √   | 分组id   |     |
+| csrf  | str | √   | 用户csrf |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注                                                   |
+|---------|-----|------|------------------------------------------------------|
+| code    | num | 响应码  | 0：成功<br/>-101：账号未登录<br/>-111：csrf 校验失败<br/>-400：请求错误 |
+| message | str | 0    |                                                      |
+| ttl     | num | 1    |                                                      |
+
+## 请求示例
+
+```shell
+curl -L -X POST 'https://api.bilibili.com/x/relation/tag/del' \
+-H 'cookie: SESSDATA=xxx' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'tagid=xxx' \
+--data-urlencode 'csrf=xxx'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1
 }
 ```
 
