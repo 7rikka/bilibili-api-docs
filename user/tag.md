@@ -240,12 +240,12 @@ curl -L -X POST 'https://api.bilibili.com/x/relation/tag/del' \
 
 ## URL参数
 
-| 参数名   | 类型  | 必填  | 内容      | 备注             |
-|-------|-----|-----|---------|----------------|
-| mid   | num |     | 当前用户uid |                |
-| tagid | num | √   | 关注分组id  | `-10`为`特别关注`分组 |
-| pn    | num |     | 当前页数    |                |
-| ps    | num |     | 分页大小    | 最多有30个特别关注用户   |
+| 参数名   | 类型  | 必填  | 内容      | 备注                              |
+|-------|-----|-----|---------|---------------------------------|
+| mid   | num |     | 当前用户uid |                                 |
+| tagid | num | √   | 关注分组id  | `-10`为`特别关注`分组<br/>最多有30个特别关注用户 |
+| pn    | num |     | 当前页数    |                                 |
+| ps    | num |     | 分页大小    | 取值范围：[1,50]                     |
 
 ## Json回复
 
@@ -260,21 +260,21 @@ curl -L -X POST 'https://api.bilibili.com/x/relation/tag/del' \
 
 ### `data`数组中的对象
 
-| 字段名             | 类型   | 内容  | 备注  |
-|-----------------|------|-----|-----|
-| mid             | num  |     |     |
-| attribute       | num  |     |     |
-| tag             | null |     |     |
-| special         | num  |     |     |
-| contract_info   | obj  |     |     |
-| uname           | str  |     |     |
-| face            | str  |     |     |
-| sign            | str  |     |     |
-| face_nft        | num  |     |     |
-| official_verify | obj  |     |     |
-| vip             | obj  |     |     |
-| live            | obj  |     |     |
-| nft_icon        | str  |     |     |
+| 字段名             | 类型   | 内容       | 备注  |
+|-----------------|------|----------|-----|
+| mid             | num  | 用户uid    |     |
+| attribute       | num  | `0`      |     |
+| tag             | null | `null`   |     |
+| special         | num  | `0`      |     |
+| contract_info   | obj  |          |     |
+| uname           | str  | 用户名      |     |
+| face            | str  | 头像       |     |
+| sign            | str  | 签名       |     |
+| face_nft        | num  | 是否为nft头像 |     |
+| official_verify | obj  | 个人认证     |     |
+| vip             | obj  | 大会员状态    |     |
+| live            | obj  | 直播状态     |     |
+| nft_icon        | str  |          |     |
 
 ### `data`数组中的对象 -> `contract_info`对象
 
@@ -322,10 +322,10 @@ curl -L -X POST 'https://api.bilibili.com/x/relation/tag/del' \
 
 ### `data`数组中的对象 -> `live`对象
 
-| 字段名         | 类型  | 内容  | 备注  |
-|-------------|-----|-----|-----|
-| live_status | num |     |     |
-| jump_url    | str |     |     |
+| 字段名         | 类型  | 内容    | 备注               |
+|-------------|-----|-------|------------------|
+| live_status | num | 直播状态  | 0：未直播<br/>1：正在直播 |
+| jump_url    | str | 直播间地址 |                  |
 
 ## 请求示例
 
