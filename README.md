@@ -53,6 +53,7 @@
     - [X] [关注/取消关注用户](user/relation.md#关注取消关注用户)
     - [X] [获取关注列表](user/following.md#获取关注列表)
     - [X] [获取粉丝列表](user/follower.md#获取粉丝列表)
+    - [X] [获取我的悄悄关注列表](user/whispers.md#获取我的悄悄关注列表)
     - [X] 关注分组
       - [X] [获取关注分组列表](user/tag.md#获取关注分组列表)
       - [X] [创建关注分组](user/tag.md#创建关注分组)
