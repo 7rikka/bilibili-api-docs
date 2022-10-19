@@ -49,12 +49,14 @@
 | RICH_TEXT_NODE_TYPE_OGV_EP      |      |        |
 | RICH_TEXT_NODE_TYPE_SEARCH_WORD |      |        |
 
-| 类型                     | 说明  | 示例  | 
-|------------------------|-----|-----|
-| AUTHOR_TYPE_NONE       |     |     |
-| AUTHOR_TYPE_NORMAL     |     |     |
-| AUTHOR_TYPE_PGC        |     |     |
-| AUTHOR_TYPE_UGC_SEASON |     |     |
+# 作者类型
+
+| 类型                     | 说明   | 示例  | 
+|------------------------|------|-----|
+| AUTHOR_TYPE_NONE       |      |     |
+| AUTHOR_TYPE_NORMAL     | 普通更新 |     |
+| AUTHOR_TYPE_PGC        | 剧集更新 |     |
+| AUTHOR_TYPE_UGC_SEASON | 合集更新 |     |
 
 | 类型              | 说明  | 示例  | 
 |-----------------|-----|-----|
@@ -63,17 +65,17 @@
 | EMOJI_TYPE_NEW  |     |     |
 | EMOJI_TYPE_VIP  |     |     |
 
-| 类型                      | 说明  | 示例  | 
-|-------------------------|-----|-----|
-| ADDITIONAL_TYPE_NONE    |     |     |
-| ADDITIONAL_TYPE_PGC     |     |     |
-| ADDITIONAL_TYPE_GOODS   |     |     |
-| ADDITIONAL_TYPE_VOTE    |     |     |
-| ADDITIONAL_TYPE_COMMON  |     |     |
-| ADDITIONAL_TYPE_MATCH   |     |     |
-| ADDITIONAL_TYPE_UP_RCMD |     |     |
-| ADDITIONAL_TYPE_UGC     |     |     |
-| ADDITIONAL_TYPE_RESERVE |     |     |
+| 类型                      | 说明   | 示例                                                                       | 
+|-------------------------|------|--------------------------------------------------------------------------|
+| ADDITIONAL_TYPE_NONE    |      |                                                                          |
+| ADDITIONAL_TYPE_PGC     |      |                                                                          |
+| ADDITIONAL_TYPE_GOODS   | 商品信息 |                                                                          |
+| ADDITIONAL_TYPE_VOTE    | 投票   | [716365292050055176](https://t.bilibili.com/716365292050055176)          |
+| ADDITIONAL_TYPE_COMMON  | 一般类型 | 游戏<br/>[716357878942793745](https://t.bilibili.com/716357878942793745)   |
+| ADDITIONAL_TYPE_MATCH   |      |                                                                          |
+| ADDITIONAL_TYPE_UP_RCMD |      |                                                                          |
+| ADDITIONAL_TYPE_UGC     | 视频跳转 | [716489253410832401](https://t.bilibili.com/716489253410832401)          |
+| ADDITIONAL_TYPE_RESERVE |      | 直播预约<br/>[716524987542929443](https://t.bilibili.com/716524987542929443) |
 
 | 类型                            | 说明  | 示例  | 
 |-------------------------------|-----|-----|
@@ -108,23 +110,23 @@
 | HIGHLIGHT_TEXT_STYLE_TYPE_NONE   |     |     |
 | HIGHLIGHT_TEXT_STYLE_TYPE_ACTIVE |     |     |
 
-| 类型                          | 说明  | 示例  | 
-|-----------------------------|-----|-----|
-| MAJOR_TYPE_NONE             |     |     |
-| MAJOR_TYPE_ARCHIVE          |     |     |
-| MAJOR_TYPE_PGC              |     |     |
-| MAJOR_TYPE_COURSES          |     |     |
-| MAJOR_TYPE_DRAW             |     |     |
-| MAJOR_TYPE_ARTICLE          |     |     |
-| MAJOR_TYPE_MUSIC            |     |     |
-| MAJOR_TYPE_COMMON           |     |     |
-| MAJOR_TYPE_LIVE             |     |     |
-| MAJOR_TYPE_MEDIALIST        |     |     |
-| MAJOR_TYPE_APPLET           |     |     |
-| MAJOR_TYPE_SUBSCRIPTION     |     |     |
-| MAJOR_TYPE_LIVE_RCMD        |     |     |
-| MAJOR_TYPE_UGC_SEASON       |     |     |
-| MAJOR_TYPE_SUBSCRIPTION_NEW |     |     |
+| 类型                          | 说明  | 示例                                                              | 
+|-----------------------------|-----|-----------------------------------------------------------------|
+| MAJOR_TYPE_NONE             |     |                                                                 |
+| MAJOR_TYPE_ARCHIVE          |     | [716526237365829703](https://t.bilibili.com/716526237365829703) |
+| MAJOR_TYPE_PGC              |     |                                                                 |
+| MAJOR_TYPE_COURSES          |     |                                                                 |
+| MAJOR_TYPE_DRAW             |     |                                                                 |
+| MAJOR_TYPE_ARTICLE          |     |                                                                 |
+| MAJOR_TYPE_MUSIC            |     |                                                                 |
+| MAJOR_TYPE_COMMON           |     |                                                                 |
+| MAJOR_TYPE_LIVE             |     |                                                                 |
+| MAJOR_TYPE_MEDIALIST        |     |                                                                 |
+| MAJOR_TYPE_APPLET           |     |                                                                 |
+| MAJOR_TYPE_SUBSCRIPTION     |     |                                                                 |
+| MAJOR_TYPE_LIVE_RCMD        |     |                                                                 |
+| MAJOR_TYPE_UGC_SEASON       |     |                                                                 |
+| MAJOR_TYPE_SUBSCRIPTION_NEW |     |                                                                 |
 
 | 类型              | 说明  | 示例  | 
 |-----------------|-----|-----|
@@ -297,25 +299,25 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象
 
-| 字段名               | 类型   | 内容   | 备注  |
-|-------------------|------|------|-----|
-| face              | str  |      |     |
-| face_nft          | bool |      |     |
-| following         | bool |      |     |
-| jump_url          | str  |      |     |
-| label             | str  |      |     |
-| mid               | num  |      |     |
-| name              | str  |      |     |
-| pub_action        | str  |      |     |
-| pub_time          | str  |      |     |
-| pub_ts            | num  |      |     |
-| type              | str  |      |     |
-| decorate          | obj  | 装扮信息 |     |
-| official_verify   | obj  |      |     |
-| pendant           | obj  |      |     |
-| pub_location_text | str  |      |     |
-| vip               | obj  |      |     |
-| nft_info          | obj  |      |     |
+| 字段名               | 类型   | 内容   | 备注            |
+|-------------------|------|------|---------------|
+| face              | str  |      |               |
+| face_nft          | bool |      |               |
+| following         | bool |      |               |
+| jump_url          | str  |      |               |
+| label             | str  |      |               |
+| mid               | num  |      |               |
+| name              | str  |      |               |
+| pub_action        | str  |      |               |
+| pub_time          | str  |      |               |
+| pub_ts            | num  |      |               |
+| type              | str  | 作者类型 | [作者类型](#作者类型) |
+| decorate          | obj  | 装扮信息 |               |
+| official_verify   | obj  |      |               |
+| pendant           | obj  |      |               |
+| pub_location_text | str  |      |               |
+| vip               | obj  |      |               |
+| nft_info          | obj  |      |               |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象
 
