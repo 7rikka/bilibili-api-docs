@@ -25,6 +25,192 @@
 | DYNAMIC_TYPE_UGC_SEASON       | 合集更新          | [718390979031203873](https://t.bilibili.com/718390979031203873) |
 | DYNAMIC_TYPE_SUBSCRIPTION_NEW |               |                                                                 |
 
+# 富文本节点类型
+
+| 类型                              | 说明   | 示例     | 
+|---------------------------------|------|--------|
+| RICH_TEXT_NODE_TYPE_NONE        |      |        |
+| RICH_TEXT_NODE_TYPE_TEXT        | 文字节点 | 最常见的类型 |
+| RICH_TEXT_NODE_TYPE_AT          | @用户  |        |
+| RICH_TEXT_NODE_TYPE_LOTTERY     | 互动抽奖 |        |
+| RICH_TEXT_NODE_TYPE_VOTE        |      |        |
+| RICH_TEXT_NODE_TYPE_TOPIC       | 话题   |        |
+| RICH_TEXT_NODE_TYPE_GOODS       | 商品链接 |        |
+| RICH_TEXT_NODE_TYPE_BV          | 视频链接 |        |
+| RICH_TEXT_NODE_TYPE_AV          |      |        |
+| RICH_TEXT_NODE_TYPE_EMOJI       | 表情   |        |
+| RICH_TEXT_NODE_TYPE_USER        |      |        |
+| RICH_TEXT_NODE_TYPE_CV          |      |        |
+| RICH_TEXT_NODE_TYPE_VC          |      |        |
+| RICH_TEXT_NODE_TYPE_WEB         | 网页链接 |        |
+| RICH_TEXT_NODE_TYPE_TAOBAO      |      |        |
+| RICH_TEXT_NODE_TYPE_MAIL        | 邮箱地址 |        |
+| RICH_TEXT_NODE_TYPE_OGV_SEASON  | 剧集信息 |        |
+| RICH_TEXT_NODE_TYPE_OGV_EP      |      |        |
+| RICH_TEXT_NODE_TYPE_SEARCH_WORD |      |        |
+
+| 类型                     | 说明  | 示例  | 
+|------------------------|-----|-----|
+| AUTHOR_TYPE_NONE       |     |     |
+| AUTHOR_TYPE_NORMAL     |     |     |
+| AUTHOR_TYPE_PGC        |     |     |
+| AUTHOR_TYPE_UGC_SEASON |     |     |
+
+| 类型              | 说明  | 示例  | 
+|-----------------|-----|-----|
+| EMOJI_TYPE_NONE |     |     |
+| EMOJI_TYPE_OLD  |     |     |
+| EMOJI_TYPE_NEW  |     |     |
+| EMOJI_TYPE_VIP  |     |     |
+
+| 类型                      | 说明  | 示例  | 
+|-------------------------|-----|-----|
+| ADDITIONAL_TYPE_NONE    |     |     |
+| ADDITIONAL_TYPE_PGC     |     |     |
+| ADDITIONAL_TYPE_GOODS   |     |     |
+| ADDITIONAL_TYPE_VOTE    |     |     |
+| ADDITIONAL_TYPE_COMMON  |     |     |
+| ADDITIONAL_TYPE_MATCH   |     |     |
+| ADDITIONAL_TYPE_UP_RCMD |     |     |
+| ADDITIONAL_TYPE_UGC     |     |     |
+| ADDITIONAL_TYPE_RESERVE |     |     |
+
+| 类型                            | 说明  | 示例  | 
+|-------------------------------|-----|-----|
+| ADDITIONAL_BUTTON_TYPE_NONE   |     |     |
+| ADDITIONAL_BUTTON_TYPE_JUMP   |     |     |
+| ADDITIONAL_BUTTON_TYPE_BUTTON |     |     |
+
+| 类型                               | 说明  | 示例  | 
+|----------------------------------|-----|-----|
+| ADDITIONAL_BUTTON_STATUS_NONE    |     |     |
+| ADDITIONAL_BUTTON_STATUS_UNCHECK |     |     |
+| ADDITIONAL_BUTTON_STATUS_CHECK   |     |     |
+
+| 类型                            | 说明  | 示例  | 
+|-------------------------------|-----|-----|
+| ADD_BUTTON_CLICK_TYPE_NONE    |     |     |
+| ADD_BUTTON_CLICK_TYPE_RESERVE |     |     |
+
+| 类型                      | 说明  | 示例  | 
+|-------------------------|-----|-----|
+| DISABLE_STATE_HIGHLIGHT |     |     |
+| DISABLE_STATE_GRAY      |     |     |
+
+| 类型                         | 说明  | 示例  | 
+|----------------------------|-----|-----|
+| ADD_BUTTON_BG_STYLE_FILL   |     |     |
+| ADD_BUTTON_BG_STYLE_STROKE |     |     |
+| ADD_BUTTON_BG_STYLE_GRAY   |     |     |
+
+| 类型                               | 说明  | 示例  | 
+|----------------------------------|-----|-----|
+| HIGHLIGHT_TEXT_STYLE_TYPE_NONE   |     |     |
+| HIGHLIGHT_TEXT_STYLE_TYPE_ACTIVE |     |     |
+
+| 类型                          | 说明  | 示例  | 
+|-----------------------------|-----|-----|
+| MAJOR_TYPE_NONE             |     |     |
+| MAJOR_TYPE_ARCHIVE          |     |     |
+| MAJOR_TYPE_PGC              |     |     |
+| MAJOR_TYPE_COURSES          |     |     |
+| MAJOR_TYPE_DRAW             |     |     |
+| MAJOR_TYPE_ARTICLE          |     |     |
+| MAJOR_TYPE_MUSIC            |     |     |
+| MAJOR_TYPE_COMMON           |     |     |
+| MAJOR_TYPE_LIVE             |     |     |
+| MAJOR_TYPE_MEDIALIST        |     |     |
+| MAJOR_TYPE_APPLET           |     |     |
+| MAJOR_TYPE_SUBSCRIPTION     |     |     |
+| MAJOR_TYPE_LIVE_RCMD        |     |     |
+| MAJOR_TYPE_UGC_SEASON       |     |     |
+| MAJOR_TYPE_SUBSCRIPTION_NEW |     |     |
+
+| 类型              | 说明  | 示例  | 
+|-----------------|-----|-----|
+| MEDIA_TYPE_NONE |     |     |
+| MEDIA_TYPE_UGC  |     |     |
+| MEDIA_TYPE_PGC  |     |     |
+| MEDIA_TYPE_LIVE |     |     |
+
+| 类型                       | 说明  | 示例  | 
+|--------------------------|-----|-----|
+| PGC_SUB_TYPE_NONE        |     |     |
+| PGC_SUB_TYPE_BANGUMI     |     |     |
+| PGC_SUB_TYPE_MOVIE       |     |     |
+| PGC_SUB_TYPE_DOCUMENTARY |     |     |
+| PGC_SUB_TYPE_DOMESTIC    |     |     |
+| PGC_SUB_TYPE_TV          |     |     |
+
+| 类型                   | 说明  | 示例  | 
+|----------------------|-----|-----|
+| DRAW_TAG_TYPE_NONE   |     |     |
+| DRAW_TAG_TYPE_COMMON |     |     |
+| DRAW_TAG_TYPE_GOODS  |     |     |
+| DRAW_TAG_TYPE_USER   |     |     |
+| DRAW_TAG_TYPE_TOPIC  |     |     |
+| DRAW_TAG_TYPE_LBS    |     |     |
+
+| 类型                               | 说明  | 示例  | 
+|----------------------------------|-----|-----|
+| MAJOR_COMMON_STYLE_TYPE_NONE     |     |     |
+| MAJOR_COMMON_STYLE_TYPE_SQUARE   |     |     |
+| MAJOR_COMMON_STYLE_TYPE_VERTICAL |     |     |
+
+| 类型                  | 说明  | 示例  | 
+|---------------------|-----|-----|
+| RESERVE_TYPE_NONE   |     |     |
+| RESERVE_TYPE_RECALL |     |     |
+
+| 类型                       | 说明  | 示例  | 
+|--------------------------|-----|-----|
+| LIVE_STATE_TYPE_NONE     |     |     |
+| LIVE_STATE_TYPE_LIVE     |     |     |
+| LIVE_STATE_TYPE_ROTATION |     |     |
+
+| 类型                               | 说明  | 示例  | 
+|----------------------------------|-----|-----|
+| SUBSCRIPTION_NEW_STYLE_TYPE_NONE |     |     |
+| SUBSCRIPTION_NEW_STYLE_TYPE_DRAW |     |     |
+| SUBSCRIPTION_NEW_STYLE_TYPE_LIVE |     |     |
+
+| 类型                           | 说明  | 示例  | 
+|------------------------------|-----|-----|
+| THREE_POINT_DELETE           |     |     |
+| THREE_POINT_REPORT           |     |     |
+| THREE_POINT_FOLLOWING        |     |     |
+| THREE_POINT_TOP              |     |     |
+| THREE_POINT_UNFAV            |     |     |
+| THREE_POINT_UNSUBS           |     |     |
+| THREE_POINT_TOPIC_REPORT     |     |     |
+| THREE_POINT_TOPIC_IRRELEVANT |     |     |
+| THREE_POINT_RCMD_RESOURCE    |     |     |
+| THREE_POINT_RCMD_FEEDBACK    |     |     |
+
+| 类型                 | 说明  | 示例  | 
+|--------------------|-----|-----|
+| FOLD_TYPE_NONE     |     |     |
+| FOLD_TYPE_PUBLISH  |     |     |
+| FOLD_TYPE_FREQUENT |     |     |
+| FOLD_TYPE_UNITE    |     |     |
+| FOLD_TYPE_LIMIT    |     |     |
+
+| 类型                           | 说明  | 示例  | 
+|------------------------------|-----|-----|
+| DYN_STATUS_TYPE_NONE         |     |     |
+| DYN_STATUS_TYPE_NORMAL       |     |     |
+| DYN_STATUS_TYPE_AUDITING     |     |     |
+| DYN_STATUS_TYPE_SELF_VISIBLE |     |     |
+| DYN_STATUS_TYPE_DELETED      |     |     |
+
+| 类型            | 说明  | 示例  | 
+|---------------|-----|-----|
+| SCENE_DETAIL  |     |     |
+| SCENE_HOT     |     |     |
+| SCENE_GENERAL |     |     |
+| SCENE_SPACE   |     |     |
+| SCENE_TOPIC   |     |     |
+
 # 获取动态列表
 
 > https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/all
@@ -66,20 +252,20 @@
 
 ### `data`对象 -> `items`数组中的对象
 
-| 字段名     | 类型    | 内容   | 备注            |
-|---------|-------|------|---------------|
-| basic   | obj   |      |               |
-| id_str  | str   |      |               |
-| modules | obj   |      |               |
-| type    | str   | 动态类型 | [动态类型](#动态类型) |
-| visible | bool  |      |               |
-| orig    | obj   |      |               |
-| height  | num   |      |               |
-| size    | num   |      |               |
-| src     | str   |      |               |
-| tags    | array |      |               |
-| width   | num   |      |               |
-| desc    | obj   |      |               |
+| 字段名     | 类型    | 内容     | 备注                           |
+|---------|-------|--------|------------------------------|
+| basic   | obj   |        |                              |
+| id_str  | str   | 动态id   |                              |
+| modules | obj   |        |                              |
+| type    | str   | 动态类型   | [动态类型](#动态类型)                |
+| visible | bool  | `true` |                              |
+| orig    | obj   |        | `DYNAMIC_TYPE_FORWARD`包含，原动态 |
+| height  | num   |        |                              |
+| size    | num   |        |                              |
+| src     | str   |        |                              |
+| tags    | array |        |                              |
+| width   | num   |        |                              |
+| desc    | obj   |        |                              |
 
 ### `data`对象 -> `items`数组中的对象 -> `basic`对象
 
@@ -101,46 +287,46 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象
 
-| 字段名                | 类型  | 内容  | 备注  |
-|--------------------|-----|-----|-----|
-| module_author      | obj |     |     |
-| module_dynamic     | obj |     |     |
-| module_more        | obj |     |     |
-| module_stat        | obj |     |     |
-| module_interaction | obj |     |     |
+| 字段名                | 类型  | 内容    | 备注  |
+|--------------------|-----|-------|-----|
+| module_author      | obj | UP主信息 |     |
+| module_dynamic     | obj |       |     |
+| module_more        | obj |       |     |
+| module_stat        | obj |       |     |
+| module_interaction | obj | 互动评论  |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象
 
-| 字段名               | 类型   | 内容  | 备注  |
-|-------------------|------|-----|-----|
-| face              | str  |     |     |
-| face_nft          | bool |     |     |
-| following         | bool |     |     |
-| jump_url          | str  |     |     |
-| label             | str  |     |     |
-| mid               | num  |     |     |
-| name              | str  |     |     |
-| pub_action        | str  |     |     |
-| pub_time          | str  |     |     |
-| pub_ts            | num  |     |     |
-| type              | str  |     |     |
-| decorate          | obj  |     |     |
-| official_verify   | obj  |     |     |
-| pendant           | obj  |     |     |
-| pub_location_text | str  |     |     |
-| vip               | obj  |     |     |
-| nft_info          | obj  |     |     |
+| 字段名               | 类型   | 内容   | 备注  |
+|-------------------|------|------|-----|
+| face              | str  |      |     |
+| face_nft          | bool |      |     |
+| following         | bool |      |     |
+| jump_url          | str  |      |     |
+| label             | str  |      |     |
+| mid               | num  |      |     |
+| name              | str  |      |     |
+| pub_action        | str  |      |     |
+| pub_time          | str  |      |     |
+| pub_ts            | num  |      |     |
+| type              | str  |      |     |
+| decorate          | obj  | 装扮信息 |     |
+| official_verify   | obj  |      |     |
+| pendant           | obj  |      |     |
+| pub_location_text | str  |      |     |
+| vip               | obj  |      |     |
+| nft_info          | obj  |      |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| card_url | str |     |     |
-| fan      | obj |     |     |
-| id       | num |     |     |
-| jump_url | str |     |     |
-| name     | str |     |     |
-| type     | num |     |     |
+| 字段名      | 类型  | 内容      | 备注  |
+|----------|-----|---------|-----|
+| card_url | str | 动态显示装扮图 |     |
+| fan      | obj |         |     |
+| id       | num | 装扮id    |     |
+| jump_url | str | 跳转地址    |     |
+| name     | str | 装扮名称    |     |
+| type     | num | `1`     |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象 -> `fan`对象
 
@@ -151,14 +337,14 @@
 | num_str | str  |     |     |
 | number  | num  |     |     |
 
-### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象 -> `fan`对象 -> `official_verify`对象
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `official_verify`对象
 
 | 字段名  | 类型  | 内容  | 备注  |
 |------|-----|-----|-----|
 | desc | str |     |     |
 | type | num |     |     |
 
-### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象 -> `fan`对象 -> `pendant`对象
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `pendant`对象
 
 | 字段名                 | 类型  | 内容  | 备注  |
 |---------------------|-----|-----|-----|
@@ -169,7 +355,7 @@
 | name                | str |     |     |
 | pid                 | num |     |     |
 
-### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象 -> `fan`对象 -> `vip`对象
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `vip`对象
 
 | 字段名                  | 类型  | 内容  | 备注  |
 |----------------------|-----|-----|-----|
@@ -182,7 +368,7 @@
 | theme_type           | num |     |     |
 | type                 | num |     |     |
 
-### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象 -> `fan`对象 -> `vip`对象 -> `label`对象
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `vip`对象 -> `label`对象
 
 | 字段名                       | 类型   | 内容  | 备注  |
 |---------------------------|------|-----|-----|
@@ -203,10 +389,34 @@
 
 | 字段名        | 类型   | 内容  | 备注  |
 |------------|------|-----|-----|
-| additional | null |     |     |
-| desc       | null |     |     |
+| additional | obj  |     |     |
+| desc       | obj  |     |     |
 | major      | obj  |     |     |
 | topic      | null |     |     |
+
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象
+
+| 字段名     | 类型  | 内容  | 备注  |
+|---------|-----|-----|-----|
+| reserve | obj |     |     |
+| type    | str |     |     |
+
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `desc`对象
+
+| 字段名             | 类型    | 内容      | 备注  |
+|-----------------|-------|---------|-----|
+| rich_text_nodes | array | 富文本节点列表 |     |
+| text            | str   | 动态的文字内容 |     |
+
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `desc`对象 -> `rich_text_nodes`数组中的对象
+
+| 字段名       | 类型  | 内容     | 备注                             |
+|-----------|-----|--------|--------------------------------|
+| jump_url  | str | 跳转地址   |                                |
+| orig_text | str | 原始内容   |                                |
+| rid       | str | 关联id   | `RICH_TEXT_NODE_TYPE_BV`：视频BV号 |
+| text      | str | 替换后的内容 |                                |
+| type      | str | 节点类型   | [富文本节点类型](#富文本节点类型)            |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象
 
@@ -291,12 +501,14 @@
 | stat            | obj |     |     |
 | title           | str |     |     |
 | type            | num |     |     |
+
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `draw`对象
 
 | 字段名   | 类型    | 内容  | 备注  |
 |-------|-------|-----|-----|
 | id    | num   |     |     |
 | items | array |     |     |
+
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `live`对象
 
 | 字段名          | 类型  | 内容  | 备注  |
@@ -326,33 +538,33 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象
 
-| 字段名     | 类型  | 内容  | 备注  |
-|---------|-----|-----|-----|
-| comment | obj |     |     |
-| forward | obj |     |     |
-| like    | obj |     |     |
+| 字段名     | 类型  | 内容   | 备注  |
+|---------|-----|------|-----|
+| comment | obj | 评论数据 |     |
+| forward | obj | 转发数据 |     |
+| like    | obj | 点赞数据 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `comment`对象
 
-| 字段名       | 类型   | 内容   | 备注            |
-|-----------|------|------|---------------|
-| count     | num  |      |               |
-| forbidden | bool |      |               |
-| hidden    | bool | 是否隐藏 | 直播类型动态会隐藏回复功能 |
+| 字段名       | 类型   | 内容      | 备注            |
+|-----------|------|---------|---------------|
+| count     | num  | 评论数     |               |
+| forbidden | bool | `false` |               |
+| hidden    | bool | 是否隐藏    | 直播类型动态会隐藏回复功能 |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `forward`对象
 
-| 字段名       | 类型   | 内容  | 备注  |
-|-----------|------|-----|-----|
-| count     | num  |     |     |
-| forbidden | bool |     |     |
+| 字段名       | 类型   | 内容      | 备注  |
+|-----------|------|---------|-----|
+| count     | num  | 转发数     |     |
+| forbidden | bool | `false` |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `like`对象
 
 | 字段名       | 类型   | 内容       | 备注  |
 |-----------|------|----------|-----|
 | count     | num  | 点赞数      |     |
-| forbidden | bool |          |     |
+| forbidden | bool | `false`  |     |
 | status    | bool | 当前用户是否点赞 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `module_interaction`对象
@@ -361,10 +573,34 @@
 |-------|-------|-----|-----|
 | items | array |     |     |
 
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `module_interaction`对象 -> `items`数组中的对象
+
+| 字段名  | 类型  | 内容  | 备注  |
+|------|-----|-----|-----|
+| desc | obj |     |     |
+| type | num | `1` |     |
+
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `module_interaction`对象 -> `items`数组中的对象 -> `desc`对象
+
+| 字段名             | 类型    | 内容      | 备注                  |
+|-----------------|-------|---------|---------------------|
+| rich_text_nodes | array | 富文本节点列表 | [富文本节点类型](#富文本节点类型) |
+| text            | str   | 评论内容    |                     |
+
+### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_stat`对象 -> `module_interaction`对象 -> `items`数组中的对象 -> `desc`对象 -> `rich_text_nodes`数组中的对象
+
+| 字段名       | 类型  | 内容    | 备注  |
+|-----------|-----|-------|-----|
+| orig_text | str |       |     |
+| rid       | str | 用户uid |     |
+| text      | str |       |     |
+| type      | str | 节点类型  |     |
+
 ### `data`对象 -> `items`数组中的对象 -> `orig`对象
 
-| 字段名     | 类型    | 内容  | 备注  |
-|---------|-------|-----|-----|
+| 字段名   | 类型    | 内容  | 备注  |
+|-------|-------|-----|-----|
+| items | array |     |     |
 
 ## 请求示例
 
