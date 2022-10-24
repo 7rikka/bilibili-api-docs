@@ -369,27 +369,27 @@ curl -L -X GET 'https://api.bilibili.com/x/v3/fav/resource/ids?media_id=11721346
 
 ### `data`数组中的对象
 
-| 字段名      | 类型   | 内容     | 备注   |
-|----------|------|--------|------|
-| id       | num  | 视频AV号  |      |
-| type     | num  | `2`    |      |
-| title    | str  | 视频标题   |      |
-| cover    | str  | 视频封面   |      |
-| intro    | str  | 视频简介   |      |
-| page     | num  | 分p数    |      |
-| duration | num  | 视频长度   | 单位：秒 |
-| upper    | obj  | UP主信息  |      |
-| attr     | num  | `0`    |      |
-| cnt_info | obj  | 视频统计信息 |      |
-| link     | str  | 播放链接   |      |
-| ctime    | num  | 上传时间   |      |
-| pubtime  | num  | 发布时间   |      |
-| fav_time | num  | 收藏时间   |      |
-| bv_id    | str  | 视频BV号  |      |
-| bvid     | str  | 视频BV号  |      |
-| season   | null |        |      |
-| ogv      | null |        |      |
-| ugc      | obj  |        |      |
+| 字段名      | 类型   | 内容    | 备注                                      |
+|----------|------|-------|-----------------------------------------|
+| id       | num  | 指向id  | 2：视频AV号<br/>12：音频AUID<br/>24：剧集SeasonId |
+| type     | num  | 视频类型  | 2：视频<br/>12：音频<br/>24：剧集                |
+| title    | str  | 标题    |                                         |
+| cover    | str  | 封面    |                                         |
+| intro    | str  | 简介    |                                         |
+| page     | num  | 分p数   |                                         |
+| duration | num  | 长度    | 单位：秒                                    |
+| upper    | obj  | UP主信息 |                                         |
+| attr     | num  | 属性位置  | 0：正常<br/>9：已失效                          |
+| cnt_info | obj  | 统计信息  |                                         |
+| link     | str  | 播放链接  |                                         |
+| ctime    | num  | 上传时间  |                                         |
+| pubtime  | num  | 发布时间  |                                         |
+| fav_time | num  | 收藏时间  |                                         |
+| bv_id    | str  | 视频BV号 |                                         |
+| bvid     | str  | 视频BV号 |                                         |
+| season   | null |       |                                         |
+| ogv      | null |       |                                         |
+| ugc      | obj  |       |                                         |
 
 ### `data`数组中的对象 -> `upper`对象
 
