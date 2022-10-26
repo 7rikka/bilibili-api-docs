@@ -1,3 +1,5 @@
+# 页面地址
+
 > https://www.bilibili.com/medialist/detail/ml1172134631
 
 # 获取收藏夹信息
@@ -379,7 +381,7 @@ curl -L -X GET 'https://api.bilibili.com/x/v3/fav/resource/ids?media_id=11721346
 | page     | num  | 分p数   |                                         |
 | duration | num  | 长度    | 单位：秒                                    |
 | upper    | obj  | UP主信息 |                                         |
-| attr     | num  | 属性位置  | 0：正常<br/>9：已失效                          |
+| attr     | num  | 属性位   | 0：正常<br/>9：已失效                          |
 | cnt_info | obj  | 统计信息  |                                         |
 | link     | str  | 播放链接  |                                         |
 | ctime    | num  | 上传时间  |                                         |

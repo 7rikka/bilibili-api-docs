@@ -111,7 +111,7 @@
 | 字段名                  | 类型  | 内容         | 备注                                           |
 |----------------------|-----|------------|----------------------------------------------|
 | type                 | num | 大会员类型      | 0：无<br />1：月大会员<br />2：年度及以上大会员              |
-| status               | num | 大会员状态      | 0：无<br />1：有                                 |
+| status               | num | 大会员状态      | 0：无<br />1：有<br/>2：？                         |
 | due_date             | num | 大会员过期时间时间戳 | 单位：毫秒                                        |
 | vip_pay_type         | num | 支付类型       |                                              |
 | theme_type           | num | `0`        |                                              |
@@ -131,7 +131,7 @@
 | text                      | str  | 会员类型文案   | `大会员` `年度大会员` `十年大会员` `百年大会员` `最强绿鲤鱼`                                                                                        |
 | label_theme               | str  | 会员标签     | vip：大会员<br />annual_vip：年度大会员<br />ten_annual_vip：十年大会员<br />hundred_annual_vip：百年大会员<br/>fools_day_hundred_annual_vip：最强绿鲤鱼 |
 | text_color                | str  | 用户名文字颜色  | `#FFFFFF`                                                                                                                    |
-| bg_style                  | num  | `1`      |                                                                                                                              |
+| bg_style                  | num  | `0` `1`  |                                                                                                                              |
 | bg_color                  | str  | 会员标签背景颜色 |                                                                                                                              |
 | border_color              | str  | `空串`     |                                                                                                                              |
 | use_img_label             | bool | `true`   |                                                                                                                              |
