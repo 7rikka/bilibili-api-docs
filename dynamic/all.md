@@ -369,23 +369,23 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| card_url | str |     |     |
-| fan      | obj |     |     |
-| id       | num |     |     |
-| jump_url | str |     |     |
-| name     | str |     |     |
-| type     | num |     |     |
+| 字段名      | 类型  | 内容           | 备注  |
+|----------|-----|--------------|-----|
+| card_url | str | 动态卡片小图标图片URL |     |
+| fan      | obj | 粉丝装扮信息       |     |
+| id       | num | 装扮ID         |     |
+| jump_url | str | 跳转URL        |     |
+| name     | str | 装扮名称         |     |
+| type     | num | `1` `2` `3`  |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `decorate`对象 -> `fan`对象
 
-| 字段名     | 类型   | 内容  | 备注  |
-|---------|------|-----|-----|
-| color   | str  |     |     |
-| is_fan  | bool |     |     |
-| num_str | str  |     |     |
-| number  | num  |     |     |
+| 字段名     | 类型   | 内容      | 备注  |
+|---------|------|---------|-----|
+| color   | str  | 编号颜色    |     |
+| is_fan  | bool | 是否是粉丝装扮 |     |
+| num_str | str  | 装扮编号    |     |
+| number  | num  | 装扮编号    |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象 -> `nft_info`对象
 
@@ -400,7 +400,7 @@
 | 字段名        | 类型  | 内容       | 备注  |
 |------------|-----|----------|-----|
 | additional | obj | 相关内容卡片信息 |     |
-| desc       | obj |          |     |
+| desc       | obj | 动态文字内容   |     |
 | major      | obj | 动态主体对象   |     |
 | topic      | obj | 话题信息     |     |
 
@@ -413,7 +413,7 @@
 | reserve | obj | 预约信息 | `ADDITIONAL_TYPE_RESERVE`类型独有 |
 | goods   | obj | 商品内容 | `ADDITIONAL_TYPE_GOODS`类型独有   |
 | vote    | obj | 投票信息 | `ADDITIONAL_TYPE_VOTE`类型独有    |
-| ugc     | obj |      |                               |
+| ugc     | obj | 视频信息 | `ADDITIONAL_TYPE_UGC`类型独有     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `common`对象
 
@@ -572,16 +572,16 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `ugc`对象
 
-| 字段名         | 类型   | 内容  | 备注  |
-|-------------|------|-----|-----|
-| cover       | str  |     |     |
-| desc_second | str  |     |     |
-| duration    | str  |     |     |
-| head_text   | str  |     |     |
-| id_str      | str  |     |     |
-| jump_url    | str  |     |     |
-| multi_line  | bool |     |     |
-| title       | str  |     |     |
+| 字段名         | 类型   | 内容      | 备注  |
+|-------------|------|---------|-----|
+| cover       | str  | 封面      |     |
+| desc_second | str  | 播放量与弹幕数 |     |
+| duration    | str  | 视频长度    |     |
+| head_text   | str  | `空串`    |     |
+| id_str      | str  | 视频AV号   |     |
+| jump_url    | str  | 视频跳转URL |     |
+| multi_line  | bool | `true`  |     |
+| title       | str  | 视频标题    |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `desc`对象
 
