@@ -118,9 +118,9 @@
 |-----------------------------|-------|-----------------------------------------------------------------|
 | MAJOR_TYPE_NONE             | 动态失效  | [716510857084796964](https://t.bilibili.com/716510857084796964) |
 | MAJOR_TYPE_ARCHIVE          | 视频    | [716526237365829703](https://t.bilibili.com/716526237365829703) |
-| MAJOR_TYPE_PGC              |       |                                                                 |
+| MAJOR_TYPE_PGC              | 剧集更新  | [645981661420322824](https://t.bilibili.com/645981661420322824) |
 | MAJOR_TYPE_COURSES          |       |                                                                 |
-| MAJOR_TYPE_DRAW             |       |                                                                 |
+| MAJOR_TYPE_DRAW             | 带图动态  | [716358050743582725](https://t.bilibili.com/716358050743582725) |
 | MAJOR_TYPE_ARTICLE          |       |                                                                 |
 | MAJOR_TYPE_MUSIC            |       |                                                                 |
 | MAJOR_TYPE_COMMON           | 一般类型  | [716481612656672789](https://t.bilibili.com/716481612656672789) |
@@ -273,7 +273,7 @@
 |----------------|-----|-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | comment_id_str | str |     | `DYNAMIC_TYPE_AV`：视频AV号<br/>`DYNAMIC_TYPE_UGC_SEASON`：视频AV号<br/>`DYNAMIC_TYPE_PGC`：剧集分集AV号<br/>`DYNAMIC_TYPE_LIVE_RCMD`：动态本身id<br/>`DYNAMIC_TYPE_DRAW`：相簿id<br/>`DYNAMIC_TYPE_ARTICLE`：专栏cv号<br/>`DYNAMIC_TYPE_FORWARD`：动态本身id<br/>`DYNAMIC_TYPE_WORD`：动态本身id<br/>`DYNAMIC_TYPE_LIVE`:动态本身id<br/>`DYNAMIC_TYPE_MEDIALIST`:收藏夹ml号                         |
 | comment_type   | num |     | 1：`DYNAMIC_TYPE_AV` `DYNAMIC_TYPE_PGC` `DYNAMIC_TYPE_UGC_SEASON`<br/>11：`DYNAMIC_TYPE_DRAW`<br/>12：`DYNAMIC_TYPE_ARTICLE`<br/>17：`DYNAMIC_TYPE_LIVE_RCMD` `DYNAMIC_TYPE_FORWARD` `DYNAMIC_TYPE_WORD` `DYNAMIC_TYPE_COMMON_SQUARE`<br/>19：`DYNAMIC_TYPE_MEDIALIST`                                                                                        |
-| like_icon      | obj |     |                                                                                                                                                                                                                                                                                                                                                          |
+| like_icon      | obj |     | `空串`                                                                                                                                                                                                                                                                                                                                                     |
 | rid_str        | str |     | `DYNAMIC_TYPE_AV`：视频AV号<br/>`DYNAMIC_TYPE_UGC_SEASON`：视频AV号 `DYNAMIC_TYPE_PGC`：剧集分集EP号<br/>`DYNAMIC_TYPE_DRAW`：相簿id<br/>`DYNAMIC_TYPE_ARTICLE`：专栏cv号<br/>`DYNAMIC_TYPE_LIVE_RCMD`：live_id<br/>`DYNAMIC_TYPE_FORWARD`：未知<br/>`DYNAMIC_TYPE_WORD`：未知<br/>`DYNAMIC_TYPE_COMMON_SQUARE`：未知<br/>`DYNAMIC_TYPE_LIVE`：直播间id<br/>`DYNAMIC_TYPE_MEDIALIST`：收藏夹ml号 |
 
 ### `data`对象 -> `items`数组中的对象 -> `basic`对象 -> `like_icon`对象
@@ -432,14 +432,14 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `common`对象 -> `button`对象
 
-| 字段名        | 类型  | 内容    | 备注                  |
-|------------|-----|-------|---------------------|
-| jump_style | obj | 跳转类型  | game<br/>decoration |
-| jump_url   | str | 跳转URL |                     |
-| type       | num | `1`   |                     |
-| check      | obj |       | ogv                 |
-| status     | num |       |                     |
-| uncheck    | obj |       |                     |
+| 字段名        | 类型  | 内容    | 备注                                    |
+|------------|-----|-------|---------------------------------------|
+| jump_style | obj | 跳转类型  | `game`和`decoration`类型特有               |
+| jump_url   | str | 跳转URL |                                       |
+| type       | num |       | 1：`game`和`decoration`类型<br/>2：`ogv`类型 |
+| check      | obj |       | `ogv`类型特有                             |
+| status     | num | `1`   |                                       |
+| uncheck    | obj |       | `ogv`类型特有                             |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `common`对象 -> `button`对象 -> `jump_style`对象
 
@@ -450,17 +450,17 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `common`对象 -> `button`对象 -> `check`对象
 
-| 字段名      | 类型  | 内容     | 备注        |
-|----------|-----|--------|-----------|
-| icon_url |     | `null` |           |
-| text     | str | 按钮显示文案 | `ogv`：已追剧 |
+| 字段名      | 类型  | 内容      | 备注        |
+|----------|-----|---------|-----------|
+| icon_url | str | 按钮图片URL |           |
+| text     | str | 按钮显示文案  | `ogv`：已追剧 |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `common`对象 -> `button`对象 -> `uncheck`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| icon_url | str |     |     |
-| text     | str |     |     |
+| 字段名      | 类型  | 内容      | 备注       |
+|----------|-----|---------|----------|
+| icon_url | str | 按钮图片URL |          |
+| text     | str | 按钮显示文案  | `ogv`：追剧 |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `additional`对象 -> `reserve`对象
 
@@ -597,73 +597,73 @@
 | orig_text | str | 原始文本   |                     |
 | text      | str | 替换后的文本 |                     |
 | type      | str | 节点类型   | [富文本节点类型](#富文本节点类型) |
-| emoji     | obj |        |                     |
-| jump_url  | str | 跳转地址   |                     |
+| emoji     | obj | 表情信息   |                     |
+| jump_url  | str | 跳转URL  |                     |
 | rid       | str | 关联id   |                     |
-| goods     | obj |        |                     |
-| icon_name | str |        |                     |
+| goods     | obj | 商品信息   |                     |
+| icon_name | str | 图标名称   | `taobao`            |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `desc`对象 -> `rich_text_nodes`数组中的对象 -> `emoji`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| icon_url | str |     |     |
-| size     | num |     |     |
-| text     | str |     |     |
-| type     | num |     |     |
+| 字段名      | 类型  | 内容      | 备注          |
+|----------|-----|---------|-------------|
+| icon_url | str | 表情图片URL |             |
+| size     | num | 表情尺寸    | `1` `2`     |
+| text     | str | 表情的文字代码 |             |
+| type     | num | 表情类型    | `1` `2` `3` |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `desc`对象 -> `rich_text_nodes`数组中的对象 -> `goods`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| jump_url | str |     |     |
-| type     | num |     |     |
+| 字段名      | 类型  | 内容    | 备注  |
+|----------|-----|-------|-----|
+| jump_url | str | 跳转URL |     |
+| type     | num | `1`   |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象
 
-| 字段名        | 类型  | 内容     | 备注                   |
-|------------|-----|--------|----------------------|
-| type       | str | 动态主体类型 | [动态主体类型](#动态主体类型)    |
-| ugc_season | obj |        |                      |
-| article    | obj | 专栏类型   | `MAJOR_TYPE_ARTICLE` |
-| draw       | obj |        |                      |
-| archive    | obj |        |                      |
-| live_rcmd  | obj |        |                      |
-| common     | obj | 一般类型   | `MAJOR_TYPE_COMMON`  |
-| pgc        | obj |        |                      |
-| courses    | obj | 课程信息   | `MAJOR_TYPE_COURSES` |
-| music      | obj |        |                      |
-| live       | obj |        |                      |
-| none       | obj | 动态失效   |                      |
+| 字段名        | 类型  | 内容     | 备注                      |
+|------------|-----|--------|-------------------------|
+| type       | str | 动态主体类型 | [动态主体类型](#动态主体类型)       |
+| ugc_season | obj | 合集信息   | `MAJOR_TYPE_UGC_SEASON` |
+| article    | obj | 专栏类型   | `MAJOR_TYPE_ARTICLE`    |
+| draw       | obj | 带图动态   | `MAJOR_TYPE_DRAW`       |
+| archive    | obj | 视频信息   | `MAJOR_TYPE_ARCHIVE`    |
+| live_rcmd  | obj | 直播状态   | `MAJOR_TYPE_LIVE_RCMD`  |
+| common     | obj | 一般类型   | `MAJOR_TYPE_COMMON`     |
+| pgc        | obj | 剧集信息   | `MAJOR_TYPE_PGC`        |
+| courses    | obj | 课程信息   | `MAJOR_TYPE_COURSES`    |
+| music      | obj |        |                         |
+| live       | obj |        |                         |
+| none       | obj | 动态失效   |                         |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `ugc_season`对象
 
-| 字段名             | 类型  | 内容  | 备注  |
-|-----------------|-----|-----|-----|
-| aid             | num |     |     |
-| badge           | obj |     |     |
-| cover           | str |     |     |
-| desc            | str |     |     |
-| disable_preview | num |     |     |
-| duration_text   | str |     |     |
-| jump_url        | str |     |     |
-| stat            | obj |     |     |
-| title           | str |     |     |
+| 字段名             | 类型  | 内容    | 备注  |
+|-----------------|-----|-------|-----|
+| aid             | num | 视频AV号 |     |
+| badge           | obj | 角标信息  |     |
+| cover           | str | 视频封面  |     |
+| desc            | str | 视频简介  |     |
+| disable_preview | num | `0`   |     |
+| duration_text   | str | 时长    |     |
+| jump_url        | str | 跳转URL |     |
+| stat            | obj | 统计信息  |     |
+| title           | str | 视频标题  |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `ugc_season`对象 -> `badge`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| bg_color | str |     |     |
-| color    | str |     |     |
-| text     | str |     |     |
+| 字段名      | 类型  | 内容   | 备注  |
+|----------|-----|------|-----|
+| bg_color | str | 背景颜色 |     |
+| color    | str | 字体颜色 |     |
+| text     | str | 角标文案 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `ugc_season`对象 -> `stat`对象
 
 | 字段名     | 类型  | 内容  | 备注  |
 |---------|-----|-----|-----|
-| danmaku | str |     |     |
-| play    | str |     |     |
+| danmaku | str | 弹幕数 |     |
+| play    | str | 播放数 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `article`对象
 
@@ -678,51 +678,51 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `draw`对象
 
-| 字段名   | 类型    | 内容  | 备注  |
-|-------|-------|-----|-----|
-| id    | num   |     |     |
-| items | array |     |     |
+| 字段名   | 类型    | 内容     | 备注  |
+|-------|-------|--------|-----|
+| id    | num   | 对应相簿id |     |
+| items | array | 图片信息列表 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `draw`对象 -> `items`数组中的对象
 
-| 字段名    | 类型    | 内容  | 备注  |
-|--------|-------|-----|-----|
-| height | num   |     |     |
-| size   | num   |     |     |
-| src    | str   |     |     |
-| tags   | array |     |     |
-| width  | num   |     |     |
+| 字段名    | 类型    | 内容    | 备注   |
+|--------|-------|-------|------|
+| height | num   | 图片高度  |      |
+| size   | num   | 图片大小  | 单位KB |
+| src    | str   | 图片URL |      |
+| tags   | array |       |      |
+| width  | num   | 图片宽度  |      |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `archive`对象
 
-| 字段名             | 类型  | 内容  | 备注  |
-|-----------------|-----|-----|-----|
-| aid             | str |     |     |
-| badge           | obj |     |     |
-| bvid            | str |     |     |
-| cover           | str |     |     |
-| desc            | str |     |     |
-| disable_preview | num |     |     |
-| duration_text   | str |     |     |
-| jump_url        | str |     |     |
-| stat            | obj |     |     |
-| title           | str |     |     |
-| type            | num |     |     |
+| 字段名             | 类型  | 内容     | 备注  |
+|-----------------|-----|--------|-----|
+| aid             | str | 视频AV号  |     |
+| badge           | obj | 角标信息   |     |
+| bvid            | str | 视频BVID |     |
+| cover           | str | 视频封面   |     |
+| desc            | str | 视频简介   |     |
+| disable_preview | num | `0`    |     |
+| duration_text   | str | 视频长度   |     |
+| jump_url        | str | 跳转URL  |     |
+| stat            | obj | 统计信息   |     |
+| title           | str | 视频标题   |     |
+| type            | num | `1`    |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `archive`对象 -> `badge`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| bg_color | str |     |     |
-| color    | str |     |     |
-| text     | str |     |     |
+| 字段名      | 类型  | 内容   | 备注  |
+|----------|-----|------|-----|
+| bg_color | str | 背景颜色 |     |
+| color    | str | 字体颜色 |     |
+| text     | str | 角标文案 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `archive`对象 -> `stat`对象
 
 | 字段名     | 类型  | 内容  | 备注  |
 |---------|-----|-----|-----|
-| danmaku | str |     |     |
-| play    | str |     |     |
+| danmaku | str | 弹幕数 |     |
+| play    | str | 播放数 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `live_rcmd`对象
 
@@ -735,7 +735,7 @@
 
 | 字段名       | 类型  | 内容     | 备注  |
 |-----------|-----|--------|-----|
-| badge     | obj |        |     |
+| badge     | obj | 角标信息   |     |
 | biz_type  | num | `0`    |     |
 | cover     | str | 左侧图片封面 |     |
 | desc      | str | 右侧描述信息 |     |
@@ -756,32 +756,32 @@
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `pgc`对象
 
-| 字段名       | 类型  | 内容  | 备注  |
-|-----------|-----|-----|-----|
-| badge     | obj |     |     |
-| cover     | str |     |     |
-| epid      | num |     |     |
-| jump_url  | str |     |     |
-| season_id | num |     |     |
-| stat      | obj |     |     |
-| sub_type  | num |     |     |
-| title     | str |     |     |
-| type      | num |     |     |
+| 字段名       | 类型  | 内容         | 备注                                                           |
+|-----------|-----|------------|--------------------------------------------------------------|
+| badge     | obj | 角标信息       |                                                              |
+| cover     | str | 视频封面       |                                                              |
+| epid      | num | 分集EpId     |                                                              |
+| jump_url  | str | 跳转URL      |                                                              |
+| season_id | num | 剧集SeasonId |                                                              |
+| stat      | obj | 统计信息       |                                                              |
+| sub_type  | num | 剧集类型       | 1：番剧<br/>2：电影<br/>3：纪录片<br/>4：国创<br/>5：电视剧<br/>6：漫画<br/>7：综艺 |
+| title     | str | 视频标题       |                                                              |
+| type      | num | `2`        |                                                              |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `pgc`对象 -> `badge`对象
 
-| 字段名      | 类型  | 内容  | 备注  |
-|----------|-----|-----|-----|
-| bg_color | str |     |     |
-| color    | str |     |     |
-| text     | str |     |     |
+| 字段名      | 类型  | 内容   | 备注  |
+|----------|-----|------|-----|
+| bg_color | str | 背景颜色 |     |
+| color    | str | 字体颜色 |     |
+| text     | str | 角标文案 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `pgc`对象 -> `stat`对象
 
 | 字段名     | 类型  | 内容  | 备注  |
 |---------|-----|-----|-----|
-| danmaku | str |     |     |
-| play    | str |     |     |
+| danmaku | str | 弹幕数 |     |
+| play    | str | 播放数 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `courses`对象
 
@@ -801,7 +801,7 @@
 |----------|-----|------|-----|
 | bg_color | str | 背景颜色 |     |
 | color    | str | 字体颜色 |     |
-| text     | str | 显示文字 |     |
+| text     | str | 角标文案 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `music`对象
 
@@ -833,7 +833,7 @@
 |----------|-----|------|-----|
 | bg_color | str | 背景颜色 |     |
 | color    | str | 字体颜色 |     |
-| text     | str | 显示文案 |     |
+| text     | str | 角标文案 |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_dynamic`对象 -> `major`对象 -> `none`对象
 
