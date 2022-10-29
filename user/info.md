@@ -28,44 +28,44 @@
 
 ### `data`对象
 
-| 字段名              | 类型   | 内容             | 备注                                                            |
-|------------------|------|----------------|---------------------------------------------------------------|
-| mid              | num  | 用户uid          |                                                               |
-| name             | str  | 昵称             |                                                               |
-| sex              | str  | 性别             | 可选：`男` `女` `保密`                                               |
-| face             | str  | 头像             |                                                               |
-| face_nft         | num  | 是否为ntf头像       | 0：否<br/>1：是                                                   |
-| face_nft_type    | num  |                | 0,1                                                           |
-| sign             | str  | 个人签名           |                                                               |
-| rank             | num  | 用户权限等级         | 5000：0级未答题<br/>10000：一般用户<br/>20000：？<br/>25000：？<br/>30000：？ |
-| level            | num  | 当前等级           |                                                               |
-| jointime         | num  | 注册时间           | 此接口返回恒为`0`                                                    |
-| moral            | num  | 节操值            | 此接口返回恒为`0`                                                    |
-| silence          | num  | 是否处于禁言状态       | 0：否<br/>1：是                                                   |
-| coins            | num  | 硬币数            | 只可查看本人数据，其他人恒为`0`                                             |
-| fans_badge       | bool | 是否开通粉丝勋章       |                                                               |
-| fans_medal       | obj  | 粉丝勋章信息         |                                                               |
-| official         | obj  | 账号认证信息         |                                                               |
-| vip              | obj  | 大会员信息          |                                                               |
-| pendant          | obj  | 头像框信息          |                                                               |
-| nameplate        | obj  | 成就勋章信息         |                                                               |
-| user_honour_info | obj  |                |                                                               |
-| is_followed      | bool | 当前登录用户是否关注了该用户 |                                                               |
-| top_photo        | str  | 空间头图url        |                                                               |
-| theme            | obj  | `空对象`          |                                                               |
-| sys_notice       | obj  | 系统通知信息         |                                                               |
-| live_room        | obj  | 直播间信息          |                                                               |
-| birthday         | str  | 生日             | 格式：MM-DD                                                      |
-| school           | obj  | 学校信息           |                                                               |
-| profession       | obj  | 职业资质信息         |                                                               |
-| tags             | null |                |                                                               |
-| series           | obj  |                |                                                               |
-| is_senior_member | num  | 是否为硬核会员        | 0：否<br />1：是                                                  |
-| mcn_info         | null |                |                                                               |
-| gaia_res_type    | num  |                |                                                               |
-| gaia_data        | null |                |                                                               |
-| is_risk          | bool |                |                                                               |
-| elec             | obj  | 充电信息           |                                                               |
+| 字段名              | 类型   | 内容             | 备注                                                                                 |
+|------------------|------|----------------|------------------------------------------------------------------------------------|
+| mid              | num  | 用户uid          |                                                                                    |
+| name             | str  | 昵称             |                                                                                    |
+| sex              | str  | 性别             | 可选：`男` `女` `保密`                                                                    |
+| face             | str  | 头像             |                                                                                    |
+| face_nft         | num  | 是否为ntf头像       | 0：否<br/>1：是                                                                        |
+| face_nft_type    | num  |                | 0,1                                                                                |
+| sign             | str  | 个人签名           |                                                                                    |
+| rank             | num  | 用户权限等级         | 5000：0级未答题<br/>10000：普通会员<br/>20000：字幕君<br/>25000：VIP<br/>30000：真·职人<br/>32000：管理员 |
+| level            | num  | 当前等级           |                                                                                    |
+| jointime         | num  | 注册时间           | 此接口返回恒为`0`                                                                         |
+| moral            | num  | 节操值            | 此接口返回恒为`0`                                                                         |
+| silence          | num  | 是否处于禁言状态       | 0：否<br/>1：是                                                                        |
+| coins            | num  | 硬币数            | 只可查看本人数据，其他人恒为`0`                                                                  |
+| fans_badge       | bool | 是否开通粉丝勋章       |                                                                                    |
+| fans_medal       | obj  | 粉丝勋章信息         |                                                                                    |
+| official         | obj  | 账号认证信息         |                                                                                    |
+| vip              | obj  | 大会员信息          |                                                                                    |
+| pendant          | obj  | 头像框信息          |                                                                                    |
+| nameplate        | obj  | 成就勋章信息         |                                                                                    |
+| user_honour_info | obj  |                |                                                                                    |
+| is_followed      | bool | 当前登录用户是否关注了该用户 |                                                                                    |
+| top_photo        | str  | 空间头图url        |                                                                                    |
+| theme            | obj  | `空对象`          |                                                                                    |
+| sys_notice       | obj  | 系统通知信息         |                                                                                    |
+| live_room        | obj  | 直播间信息          |                                                                                    |
+| birthday         | str  | 生日             | 格式：MM-DD                                                                           |
+| school           | obj  | 学校信息           |                                                                                    |
+| profession       | obj  | 职业资质信息         |                                                                                    |
+| tags             | null |                |                                                                                    |
+| series           | obj  |                |                                                                                    |
+| is_senior_member | num  | 是否为硬核会员        | 0：否<br />1：是                                                                       |
+| mcn_info         | null |                |                                                                                    |
+| gaia_res_type    | num  |                |                                                                                    |
+| gaia_data        | null |                |                                                                                    |
+| is_risk          | bool |                |                                                                                    |
+| elec             | obj  | 充电信息           |                                                                                    |
 
 ### `data`对象 -> `fans_medal`对象
 
@@ -402,19 +402,20 @@ curl -L -X GET 'https://api.bilibili.com/x/space/acc/info?mid=523637998'
 
 # 系统提示（sys_notice）示例
 
-| id  | content                                         | url | notice_type | 示例用户                                                                                            |
-|-----|-------------------------------------------------|-----|-------------|-------------------------------------------------------------------------------------------------|
-| 5   | 该用户存在争议行为，已冻结其帐号功能的使用                           |     | 1           | [82385070](https://space.bilibili.com/82385070)                                                 |
-| 8   | 该用户存在较大争议，请谨慎甄别其内容                              |     | 1           | [28062215](https://space.bilibili.com/28062215)                                                 |
-| 11  | 该账号涉及合约争议，暂冻结其账号功能使用。详见公告->                     |     | 1           |
-| 16  | 该UP主内容存在争议，请注意甄别视频内信息                           |     | 1           | [382534165](https://space.bilibili.com/382534165)                                               |
-| 20  | 请允许我们在此献上最后的告别，以此纪念其在哔哩哔哩留下的回忆与足迹。请点此查看纪念账号相关说明 |     | 2           |
-| 22  | 该账号涉及合约诉讼，封禁其账号使用。                              |     |
-| 24  | 该账号涉及合约争议，暂冻结其账号功能使用。                           |     | 1           | [291229008](https://space.bilibili.com/291229008)                                               |
-| 25  | 该用户涉及严重指控，暂冻结其账号功能使用                            |     | 1           | [81447581](https://space.bilibili.com/81447581)                                                 |
-| 31  | 该用户涉及严重指控，暂冻结其账号功能使用                            |     | 1           | [22439273](https://space.bilibili.com/22439273)                                                 |
-| 34  | 该用户涉及严重指控，暂冻结其账号功能使用                            |     | 1           | [1640486775](https://space.bilibili.com/1640486775)                                             |
-| 36  | 该账户存在争议，请谨慎甄别                                   |     | 1           | [198297](https://space.bilibili.com/198297)<br/>[18149131](https://space.bilibili.com/18149131) |
+| id  | content                                         | url                                       | notice_type | 示例用户                                                                                            |
+|-----|-------------------------------------------------|-------------------------------------------|-------------|-------------------------------------------------------------------------------------------------|
+| 5   | 该用户存在争议行为，已冻结其帐号功能的使用                           |                                           | 1           | [82385070](https://space.bilibili.com/82385070)                                                 |
+| 8   | 该用户存在较大争议，请谨慎甄别其内容                              |                                           | 1           | [28062215](https://space.bilibili.com/28062215)                                                 |
+| 11  | 该账号涉及合约争议，暂冻结其账号功能使用。详见公告->                     |                                           | 1           |
+| 16  | 该UP主内容存在争议，请注意甄别视频内信息                           |                                           | 1           | [382534165](https://space.bilibili.com/382534165)                                               |
+| 20  | 请允许我们在此献上最后的告别，以此纪念其在哔哩哔哩留下的回忆与足迹。请点此查看纪念账号相关说明 |                                           | 2           |
+| 22  | 该账号涉及合约诉讼，封禁其账号使用。                              |                                           |
+| 24  | 该账号涉及合约争议，暂冻结其账号功能使用。                           |                                           | 1           | [291229008](https://space.bilibili.com/291229008)                                               |
+| 25  | 该用户涉及严重指控，暂冻结其账号功能使用                            |                                           | 1           | [81447581](https://space.bilibili.com/81447581)                                                 |
+| 31  | 该用户涉及严重指控，暂冻结其账号功能使用                            |                                           | 1           | [22439273](https://space.bilibili.com/22439273)                                                 |
+| 34  | 该用户涉及严重指控，暂冻结其账号功能使用                            |                                           | 1           | [1640486775](https://space.bilibili.com/1640486775)                                             |
+| 36  | 该账户存在争议，请谨慎甄别                                   |                                           | 1           | [198297](https://space.bilibili.com/198297)<br/>[18149131](https://space.bilibili.com/18149131) |
+| 39  | 该用户涉嫌违反《bilibili主播直播规范V2.6》，点击查看详情              | https://t.bilibili.com/721714403248963656 | 1           | [2294686](https://space.bilibili.com/2294686)                                                   |
 
 # rank
 
