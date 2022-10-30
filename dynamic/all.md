@@ -295,7 +295,7 @@
 | module_stat        | obj | 动态统计数据    |     |
 | module_interaction | obj | 热度评论      |     |
 | module_fold        | obj | 动态折叠信息    |     |
-| module_dispute     | obj | 视频提醒信息    |     |
+| module_dispute     | obj | 争议小黄条     |     |
 
 ### `data`对象 -> `items`数组中的对象 -> `modules`对象 -> `module_author`对象
 
