@@ -72,6 +72,7 @@
   - [ ] 动态
     - [X] [获取动态列表](dynamic/all.md#获取动态列表)
     - [X] [获取用户空间动态](dynamic/space.md#获取用户空间动态)
+    - [X] [获取动态详情](dynamic/detail.md#获取动态详情)
 - [ ] APP端
   - [ ] 登录
     - [ ] 账号密码登录
