@@ -66,6 +66,7 @@
 | gaia_data        | null |                |                                                                                    |
 | is_risk          | bool |                |                                                                                    |
 | elec             | obj  | 充电信息           |                                                                                    |
+| contract         | obj  | 是否显示老粉计划       |                                                                                    |
 
 ### `data`对象 -> `fans_medal`对象
 
@@ -233,6 +234,13 @@
 | title    | str  | `空串`    |                  |
 | icon     | str  | `空串`    |                  |
 | jump_url | str  | `空串`    |                  |
+
+### `data`对象 -> `contract`对象
+
+| 字段名               | 类型   | 内容        | 备注                            |
+|-------------------|------|-----------|-------------------------------|
+| is_display        | bool |           | `true`/`false`<br/>在页面中未使用此字段 |
+| is_follow_display | bool | 是否在显示老粉计划 | `true`：显示<br/>`false`：不显示     |
 
 ## 请求示例
 
