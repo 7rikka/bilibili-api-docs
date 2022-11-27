@@ -72,3 +72,74 @@ curl --location --request POST 'https://api.bilibili.com/x/v1/contract/add_contr
 ```
 
 </details>
+
+# 老粉计划发送留言
+
+> https://api.bilibili.com/x/v1/contract/add_message
+
+请求方式：`POST`
+
+是否需要登录：`是`
+
+鉴权方式：`SESSDATA`
+
+Content-Type：`application/x-www-form-urlencoded`
+
+## FORM参数
+
+| 参数名     | 类型  | 必填  | 内容     | 备注  |
+|---------|-----|-----|--------|-----|
+| aid     | str |     | `空串`   |     |
+| up_mid  | str | √   | UP主UID |     |
+| source  | str |     | `4`    |     |
+| scene   | str |     | `105`  |     |
+| content | str | √   | 留言内容   |     |
+| csrf    | str | √   | 用户csrf |     |
+
+## Json回复
+
+### 根对象
+
+| 字段名     | 类型  | 内容   | 备注                           |
+|---------|-----|------|------------------------------|
+| code    | num | 响应码  | 0：成功<br/>158005：您跟up主还不是契约关系 |
+| message | str | 0    |                              |
+| ttl     | num | 1    |                              |
+| data    | obj | 信息本体 |                              |
+
+### `data`对象
+
+| 字段名           | 类型  | 内容               | 备注  |
+|---------------|-----|------------------|-----|
+| success_toast | str | `提交成功，UP主已收到留言~` |     |
+
+## 请求示例
+
+### `SESSDATA`方式
+
+```shell
+curl --location --request POST 'https://api.bilibili.com/x/v1/contract/add_message' \
+--header 'Cookie: SESSDATA=xxx' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'up_mid=2' \
+--data-urlencode 'content=..' \
+--data-urlencode 'csrf=xxx'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "success_toast": "提交成功，UP主已收到留言~"
+  }
+}
+```
+
+</details>
