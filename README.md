@@ -65,6 +65,7 @@
     - [X] [预约（通过动态中的按钮）](space/reservation.md#预约通过动态中的按钮)
     - [X] [预约（通过UP主个人空间中的按钮）](space/reservation.md#预约通过up主个人空间中的按钮)
     - [X] [取消预约（通过UP主个人空间中的按钮）](space/reservation.md#取消预约通过up主个人空间中的按钮)
+    - [X] [加入老粉计划](user/contract.md#加入老粉计划)
   - [ ] 收藏夹
     - [X] [获取收藏夹信息](fav/detail.md#获取收藏夹信息)
     - [X] [获取收藏夹内视频id列表](fav/detail.md#获取收藏夹内视频id列表)
