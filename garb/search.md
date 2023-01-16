@@ -11,8 +11,8 @@
 | 参数名      | 类型  | 必填  | 内容    | 备注  |
 |----------|-----|-----|-------|-----|
 | key_word | str | √   | 搜索关键词 |     |
-| pn       | str |     |       |     |
-| pn       | str |     |       |     |
+| pn       | str |     | 当前页数  |     |
+| ps       | str |     | 分页大小  |     |
 
 ## Json回复
 
@@ -36,23 +36,23 @@
 
 ### `data`对象 -> `list`数组中的对象
 
-| 字段名              | 类型   | 内容     | 备注        |
-|------------------|------|--------|-----------|
-| item_id          | num  |        |           |
-| name             | str  |        |           |
-| group_id         | num  |        |           |
-| group_name       | str  |        |           |
-| part_id          | num  |        |           |
-| state            | str  |        |           |
-| properties       | obj  |        |           |
-| current_activity | null | 折扣信息   |           |
-| current_sources  | null |        |           |
-| finish_sources   | null |        |           |
-| sale_left_time   | num  |        |           |
-| sale_time_end    | num  |        |           |
-| sale_surplus     | num  | 库存剩余   |           |
-| sale_count_desc  | str  | 已售数量描述 |           |
-| tag              | str  | 角标内容   | `粉丝套装已售罄` |
+| 字段名              | 类型   | 内容     | 备注                                                           |
+|------------------|------|--------|--------------------------------------------------------------|
+| item_id          | num  |        |                                                              |
+| name             | str  |        |                                                              |
+| group_id         | num  |        |                                                              |
+| group_name       | str  |        |                                                              |
+| part_id          | num  |        |                                                              |
+| state            | str  |        |                                                              |
+| properties       | obj  |        |                                                              |
+| current_activity | null | 折扣信息   |                                                              |
+| current_sources  | null |        |                                                              |
+| finish_sources   | null |        |                                                              |
+| sale_left_time   | num  |        |                                                              |
+| sale_time_end    | num  |        |                                                              |
+| sale_surplus     | num  | 库存剩余   |                                                              |
+| sale_count_desc  | str  | 已售数量描述 |                                                              |
+| tag              | str  | 角标内容   | `空串`<br/>`粉丝套装已售罄`<br/>`即将下架`<br/>`即将售罄`<br/>`新品`<br/>`正在预约` |
 
 ### `data`对象 -> `list`数组中的对象 -> `properties`对象
 
