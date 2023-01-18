@@ -80,6 +80,8 @@
     - [ ] 装扮
         - [X] [搜索装扮](garb/search.md#搜索装扮)
         - [X] [装扮列表](garb/list.md#装扮列表)
+    - [ ] 弹幕
+      - [X] [点赞弹幕](danmaku/thumb_up.md#点赞弹幕)
 - [ ] APP端
     - [ ] 登录
         - [ ] 账号密码登录

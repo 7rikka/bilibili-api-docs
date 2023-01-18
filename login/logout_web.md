@@ -10,10 +10,10 @@ Content-Type：`application/x-www-form-urlencoded`
 
 ## URL参数
 
-| 参数名      | 类型  | 必填          | 内容  | 备注                              |
-|----------|-----|-------------|-----|---------------------------------|
-| biliCSRF | str | 用户csrf      | 必要  |                                 |
-| gourl    | str | 退出成功后跳转到的页面 | 非必要 | 默认值：`javascript:history.go(-1)` |
+| 参数名      | 类型  | 必填  | 内容          | 备注                              |
+|----------|-----|-----|-------------|---------------------------------|
+| biliCSRF | str | √   | 用户csrf      |                                 |
+| gourl    | str |     | 退出成功后跳转到的页面 | 默认值：`javascript:history.go(-1)` |
 
 ## Json回复
 
