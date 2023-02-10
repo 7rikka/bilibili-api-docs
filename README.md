@@ -81,10 +81,10 @@
         - [X] [搜索装扮](garb/search.md#搜索装扮)
         - [X] [装扮列表](garb/list.md#装扮列表)
     - [ ] 弹幕
-      - [X] [点赞弹幕](danmaku/thumb_up.md#点赞弹幕)
+        - [X] [点赞弹幕](danmaku/thumb_up.md#点赞弹幕)
     - [ ] 直播
-      - [X] [查询直播间封禁状态](live/ban.md#查询直播间封禁状态)
-      - [ ] [获取直播间信息](live/info.md#获取直播间信息)
+        - [X] [查询直播间封禁状态](live/ban.md#查询直播间封禁状态)
+        - [ ] [获取直播间信息](live/info.md#获取直播间信息)
 - [ ] APP端
     - [ ] 登录
         - [ ] 账号密码登录
@@ -126,5 +126,8 @@
     - [ ] 搜索
         - [X] [搜索建议](search/search_car.md#搜索建议)
         - [X] [搜索](search/search_car.md#搜索)
+- [ ] 漫画
+    - [ ] 轻享卡
+        - [X] 获取轻享卡信息
 - [ ] 其他
     - [X] [获取当前时间戳](other/now.md#获取当前时间戳)
