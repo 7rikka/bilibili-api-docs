@@ -137,3 +137,72 @@ curl -L -X POST 'https://manga.bilibili.com/twirp/card.v1.Card/GetUserLightCard?
 ```
 
 </details>
+
+# 领取轻享卡奖励
+
+> https://manga.bilibili.com/twirp/card.v1.Card/GetLightCoupon
+
+请求方式：`POST`
+
+是否需要登录：`是`
+
+鉴权方式：`SESSDATA`/`access_key`
+
+Content-Type：`application/json`
+
+## URL参数
+
+| 参数名        | 类型  | 必填 | 内容              | 备注 |
+|------------|-----|----|-----------------|----|
+| access_key | str |    | 与`SESSDATA`二选其一 |    |
+
+## JSON参数
+
+| 参数名       | 类型  | 必填 | 内容  | 备注     |
+|-----------|-----|----|-----|--------|
+| weekIndex | num | √  | 第几周 | 从`1`开始 |
+| type      | num | √  | 第几天 | 从`1`开始 |
+
+## Json回复
+
+### 根对象
+
+| 字段名  | 类型  | 内容  | 备注                                                 |
+|------|-----|-----|----------------------------------------------------|
+| code | num | 响应码 | 0：成功<br/>3：今日已领取,请明日再来<br/>3：还未满足领取条件<br/>4：找不到数据~ |
+| msg  | str |     |                                                    |
+| data | obj |     |                                                    |
+
+## 请求示例
+
+### `SESSDATA`方式
+
+```shell
+curl -L -X POST 'https://manga.bilibili.com/twirp/card.v1.Card/GetLightCoupon' \
+-H 'content-type: application/json; charset=utf-8' \
+-H 'Cookie: SESSDATA=xxx' \
+--data-raw '{"type":1,"weekIndex":1}'
+```
+
+### `access_key`方式
+
+```shell
+curl -L -X POST 'https://manga.bilibili.com/twirp/card.v1.Card/GetLightCoupon?access_key=xxx' \
+-H 'content-type: application/json; charset=utf-8' \
+--data-raw '{"type":1,"weekIndex":1}'
+```
+
+## 响应示例
+
+<details>
+<summary>点击查看</summary>
+
+```json
+{
+  "code": 0,
+  "msg": "",
+  "data": {}
+}
+```
+
+</details>
