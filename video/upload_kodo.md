@@ -12,18 +12,18 @@
 
 ### kodo方式
 
-| 参数名        | 类型  | 必填  | 内容     | 备注                                                           |
-|------------|-----|-----|--------|--------------------------------------------------------------|
-| name       | str | √   | 视频文件名  |                                                              |
-| size       | str | √   | 视频文件大小 | 单位：字节                                                        |
-| r          | str | √   | 上传方式   | `kodo`                                                       |
-| os         | str |     |        | `kodo`                                                       |
-| bucket     | str |     |        | 可选：`bvcupcdnkodohd` `bvcupcdnkodobm`<br/>默认：`bvcupcdnkodohd` |
-| profile    | str |     |        | `ugcupos/bup`                                                |
-| ssl        | str |     |        | `0`                                                          |
-| version    | str |     |        | `2.11.0`                                                     |
-| build      | str |     |        | `2110000`                                                    |
-| webVersion | str |     |        | `2.0.0`                                                      |
+| 参数名        | 类型  | 必填  | 内容     | 备注                                                                              |
+|------------|-----|-----|--------|---------------------------------------------------------------------------------|
+| name       | str | √   | 视频文件名  |                                                                                 |
+| size       | str | √   | 视频文件大小 | 单位：字节                                                                           |
+| r          | str | √   | 上传方式   | `kodo`                                                                          |
+| os         | str |     |        | `kodo`                                                                          |
+| bucket     | str |     |        | 已知可用值：`bvcupcdnkodohd` `bvcupcdnkodobm`<br/>默认：`bvcupcdnkodohd`                 |
+| profile    | str | √   |        | 已知可用值：`ugcupos/bup` `ugcupos/bupfetch` `ugcupos/fetch` `ugcfx/bup` `fxmeta/bup` |
+| ssl        | str |     |        | `0`                                                                             |
+| version    | str |     |        | `2.11.0`                                                                        |
+| build      | str |     |        | `2110000`                                                                       |
+| webVersion | str |     |        | `2.0.0`                                                                         |
 
 ## Json回复
 
